@@ -1,0 +1,92 @@
+/* gallery 공통 pc-sub5*/
+#content{width:100%;height: auto;position: relative;
+   margin: 0 auto;padding-bottom: 5px;
+   background:rgba(0,0,0,.85); }
+#content h2{position: absolute; top: -350px;
+      width: 100%; text-align: center; font-size: 4em; color: #fff;}
+#content h3{font-size: 2.5rem;padding:2% 0 0 1%;margin-bottom: 50px;text-align: center;}
+#content .intro h3::after{content:'A Mari Usque Ad Mare';display: block;font-size: 1.1rem;margin-top: 10px;}
+#content section{width: 98%;margin: 0 1% 100px;}
+/* #content h3>p{font-size: 1.1rem;line-height: 1.5rem;text-align: center;} */
+
+
+#imgBG{display: block;}
+.down{display: block; font-size:.8rem; position: absolute; 
+  left:50%; transform: translateX(-50%); bottom:15%;font-family:"Libre Baskerville";
+ }
+@keyframes ani {
+0% { transform:scale(1); opacity:1; color:#fff;}
+100% { transform:scale(1.2); opacity:0.8; color:#F39F30;}
+}	
+.down div{background: url(../images/scroll.png)50% 0% no-repeat;
+  padding-top: 80px; animation:ani 1.5s infinite  alternate;}
+
+
+
+  /* gallery 본문 영역 */
+#content .wrapper {width: 100%;margin: 0 auto;padding-top: 50px;}
+#content .wrapper .masonry {
+   display: flex;
+   flex-direction: column; /*이게flex의 포인트!! 방향을 정하는 css ,수직정렬*/
+   flex-wrap: wrap;/*line떨어지니까 wrap잡아준다. */
+   align-content: start;/*start방향 맞춰주면서 라인을 맞춰준다. */
+   max-height: 1700px;
+   /*최대크기를 잡아줘야함! flex적용시,최대높이를 맞춰주면 다른 단들이 잘려서 옆 단으로 넘어가며 행렬이 맞춰지듯이 보여지는 트릭 */
+   }
+   
+#content .wrapper .masonry .item {
+   transition: all .5s ease-out;
+   margin: .5%;
+   width: 24%;/*총 25%에 실제 24% 양옆 .5%(총1%) 해서 중심맞춰주기*/
+   box-sizing: border-box;
+   overflow: hidden;
+   }
+#content .wrapper .masonry .item:hover{transform: translateX(7px);}
+#content .wrapper .masonry .item img{width: 100%;height: 100%;
+                                    object-fit: cover;object-position: center;}
+
+   .box1{ height:300px;}
+   .box2{ height:320px;}
+   .box3{ height:220px;}
+   .box4{ height:400px;}
+   .box5{ height:550px;}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content .wrapper .masonry {max-height:1750px;}
+   #content .wrapper .masonry .item {width: 32.33%;}
+
+   #content .wrapper .masonry .item:nth-child(1){display: none;}
+   #content .wrapper .masonry .item:nth-child(2){display: none;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+   #content h2{font-size: 3em;}
+	
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   #content h3{font-size: 2rem;}
+   #content .wrapper .masonry {max-height:2000px;}
+   #content .wrapper .masonry .item {width: 49%;}
+   
+   #content .wrapper .masonry .item:nth-child(4){display: none;}
+   #content .wrapper .masonry .item:nth-child(7){display: none;}
+   #content .wrapper .masonry .item:nth-child(8){display: none;}
+   #content .wrapper .masonry .item:nth-child(9){display: none;}
+}
+
+   /* 최소의 사이즈는 320px 고정 */
+   @media screen and (max-width:480px) {
+      #content .wrapper{ min-width:320px; }
+      }

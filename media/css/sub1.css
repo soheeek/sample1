@@ -1,0 +1,283 @@
+/* 와이드 pc-sub1*/
+#content{width:100%;height: auto;position: relative;
+         margin: 0 auto;padding-bottom: 10px;
+         background:rgba(0,0,0,.85); }
+#content h2{position: absolute; top: -350px;
+            width: 100%; text-align: center; font-size: 4em; color: #fff;}
+#content h3{font-size: 2.5rem;padding:2% 0 0 1%;margin-bottom: 50px;text-align: center;}
+#content .intro h3::after{content:'A Mari Usque Ad Mare';display: block;font-size: 1.1rem;margin-top: 10px;}
+#content section{width: 98%;margin: 0 1%;}
+/* #content h3>p{font-size: 1.1rem;line-height: 1.5rem;text-align: center;} */
+
+
+#imgBG{display: block;}
+.down{display: block; font-size:.8rem; position: absolute; 
+        left:50%; transform: translateX(-50%); bottom:15%;font-family:"Libre Baskerville";
+       }
+@keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#fff;}
+      100% { transform:scale(1.2); opacity:0.8; color:#F39F30;}
+}	
+.down div{background: url(../images/scroll.png)50% 0% no-repeat;
+        padding-top: 80px; animation:ani 1.5s infinite  alternate;}
+
+
+/* intro 영역 */
+#content .intro{width:99%;margin:0 .5%;background: #000;padding-bottom: 50px;}
+#content .intro .intro_container{overflow: hidden;}
+#content .intro .wrapper {width: 100%;margin: 0 auto;}
+
+
+#content .intro .intro_container{display: flex;width:98%;margin:0 1%;}
+#content .intro .intro_text {width: 90%;margin:50px 5%;text-align: center;}
+
+
+
+#content .intro .wrapper .masonry {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+        margin: 64px 64px 0;}
+#content .intro .wrapper .masonry li{border-radius: 20px;}
+#content .intro .wrapper .masonry li:nth-child(2){align-self:flex-end;    margin-bottom: 50px;}
+
+#content .intro .wrapper .masonry .item img{width: 100%;height: 100%;border-radius: 20px;
+                                         object-fit: cover;object-position: center;}
+
+
+#content .sub1_main{width: 2000px;
+                    overflow: hidden;
+                    height:150px;
+                    margin: 0 auto 100px;
+                    background: url(../images/sub1_main01.jpg) no-repeat 50% fixed;
+                    position: relative;
+                    left: 50%;margin-left: -1000px;}
+
+
+
+
+
+/* 국가 Anthem 영역 */
+
+#content .Anthem{}
+#content .Anthem .music_box{width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;}
+#content .Anthem img{}
+#content .Anthem dl{}
+#content .Anthem dl dt{font-size: 1.2rem;font-weight: 600;text-align: center;margin-bottom: 50px;}
+#content .Anthem dl dt::after{content:'';display: block;width: 100%;height: 1px;background: #fff;margin-top:10px}
+#content .Anthem dl dd{line-height:1.5rem;text-align: center;}
+#content .Anthem dl dd p{display: block;margin-bottom: 70px;}
+
+.audioBox{margin: 50px;padding: 20px;}
+.audioBox img{width: 70%; filter: grayscale(100);}
+.audioBox ul{overflow:hidden;}
+.audioBox li{width: 50%; float: left; text-align: center;}
+.audioBox li a{display: block;}
+.audioBox ul span{display: block; font-size: 20px;padding: 10px 0; }
+
+.audioBox .audio_control{width: 300px; border: 3px solid #ccc; margin: 30px auto;
+   border-radius: 40px; padding: 20px 0; text-align: center;}
+
+ .audioBox li img.current {
+       animation:animationRotation1 2s .5s infinite linear;
+       filter: grayscale(0);
+ }  
+ @keyframes animationRotation1 {/*360도 도는 애니메이션*/
+   from {
+       transform:rotate(0deg) ;
+   }
+   to {
+       transform:rotate(360deg);
+   }
+}  
+
+#content .Anthem .container{}  
+#content .Anthem .container .music-container {
+        position: relative;
+        margin: 100px 0;
+        width: 400px;
+        height: 80px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 1px 10px 8px rgb(222, 185, 185); }
+      
+      .music-info {
+      
+        position: absolute;
+        padding: 10px 10px 10px 150px;
+        height: 50px;
+        width: 240px;
+        top: 0;
+        left:0;
+        background-color: rgb(219, 193, 193);
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(0%);
+        transition: transform 0.3s ease-in;
+        z-index: 0;
+        animation-play-state: paused;
+      
+      }
+      
+      
+      .music-container.play .music-info {
+        animation: showMusicInfo 0.5s forwards;
+        transform: translateY(-100%);
+        animation-play-state: running;
+      
+      }
+      
+      @keyframes showMusicInfo {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+      
+      
+      .music-info h4 {
+        margin: 0;
+      }
+      
+      .progress-container {
+        margin: 5px 0;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .progress {
+        background-color: #fe8daa;
+        height: 4px;
+        width: 0%;
+        border-radius: 5px;
+        transition: width 0.1s linear;
+      }
+      
+      
+      .img-container {
+        position: absolute;
+        top: -30px;
+        left: 40px;
+        width: 110px;
+        height: 110px;
+      }
+      
+      .img-container::after {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 10;
+      
+      }
+      
+      .img-container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      
+      .navigation {
+        position: absolute;
+        right: 120px;
+        bottom: 10px;
+        width: 100px;
+        display: flex;
+      }
+      
+      .navigation button {
+        color: rgb(223, 214, 214);
+        background-color: #fff;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer; }
+      
+      .actiong-btn.big {
+        font-size: 1.8rem;
+      }
+      
+      .music-container.play .img-container img {
+        animation: rotate 3s infinite linear;
+        animation-play-state: running;
+      }
+      
+      
+      
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+       
+	
+} 
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+        #content{width:100%;}
+        #content .sub1_main{background: url(../images/sub1_main02.jpg) no-repeat 50% fixed;}
+
+        #content .intro .wrapper .masonry {grid-template-columns: repeat(2, 1fr);}
+        #content .intro .wrapper .masonry li:nth-child(2){display: none;}
+	
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+        #content h2{font-size: 3em;}
+        #content section{margin: 0 1% 80px;}
+        #content .sub1_main{background: url(../images/sub1_main03.jpg) no-repeat 50% fixed;}
+
+  
+        #content .Anthem .music_box{flex-direction: column;align-items: center;}
+        #content .intro .wrapper .masonry {grid-template-columns: repeat(2, 1fr);
+                                  grid-template-areas: 
+                                  'a b'
+                                  'a c'
+                                   }
+          #content .intro .wrapper .masonry li:nth-child(1){grid-area:a;}
+          #content .intro .wrapper .masonry li:nth-child(2){grid-area:b;display: block; align-self: auto; margin-bottom:0;}
+          #content .intro .wrapper .masonry li:nth-child(3){grid-area:c;}
+           
+          
+        
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content h3{font-size: 2rem;}
+  #content .intro h3::after{font-size: 0.9rem;}
+ 
+        #content .sub1_main{background: url(../images/sub1_main04.jpg) no-repeat 50%;}
+	/* #content .sub1_main>p{font-size:1.5rem;} */
+
+  #content .intro .wrapper .masonry {display: block; margin:0 15px;}
+
+  #content .intro .wrapper .masonry {grid-template-columns: repeat(1, 1fr); }
+  #content .intro .wrapper .masonry li:nth-child(1){display:none;}
+  #content .intro .wrapper .masonry li:nth-child(3){display:none;}
+}
+

@@ -1,0 +1,203 @@
+/* 와이드 pc-sub1*/
+#content{width:100%;height: auto;position: relative;
+         margin: 0 auto;padding-bottom:150px;
+         background:rgba(0,0,0,.85); }
+#content h2{position: absolute; top: -350px;font-family: "Libre Baskerville";
+            width: 100%; text-align: center;font-size: 4em; color: #fff;}
+#content h3{font-size: 2.5rem;padding:2% 0 0 1%;margin-bottom: 50px;text-align: center;}
+#content section{width: 98%;margin: 0 1%;padding-top: 100px;}
+
+
+#imgBG{display: block;}
+.down{display: block; font-size:.8rem; position: absolute; 
+        left:50%; transform: translateX(-50%); bottom:15%;font-family:"Libre Baskerville";
+       }
+@keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#fff;}
+      100% { transform:scale(1.2); opacity:0.8; color:#F39F30;}
+}	
+.down div{background: url(../images/scroll.png)50% 0% no-repeat;
+        padding-top: 80px; animation:ani 1.5s infinite  alternate;}
+
+/* 본문영역 */
+
+#content .unesco{}
+#content .unesco .pop_gallery{width:98%;margin:0 1%; }
+#content .unesco ul{width: 100%; display:grid;align-items: center;
+                margin-top: 60px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: auto;
+                grid-gap:20px; }
+#content .unesco ul li{height: 100%;border-bottom: 1px solid #fff;}
+#content .unesco ul li img{width: 100%; height: 100%; transition: all .3s ease-out;
+                     object-fit: cover;object-position: center;}
+ #content .unesco ul li:hover img{filter: brightness(0.4);}
+#content .unesco ul li dl dt{font-size: 1.5rem;font-weight: 700;text-align: center;margin-bottom: 20px;}
+#content .unesco ul li dl dd{text-align: justify;line-height: 1.5em;}
+
+
+#content .unesco .openBtn{text-align: center;
+        font-weight: 700; font-size: 1.5rem; 
+        position: relative;}
+#content .unesco .openBtn .pop_title {padding-top:7%;position: relative;}
+#content .unesco .openBtn a{width:100%;position: relative;}
+#content .unesco .openBtn a .pop_title::before{content: '';
+                                            width: 100%;
+                                            height: 1px;
+                                            background: #fff;
+                                            position: absolute;
+                                            top: 15%;
+                                            left: 50%;
+                                            transform: translateX(-50%);}
+#content .unesco .openBtn a .loca{padding-bottom:5%;position: relative;}
+/* #content .unesco .openBtn a .loca::before{content: '';
+                                            width: 100%;
+                                            height: 1px;
+                                            background: #fff;
+                                            position: absolute;
+                                            bottom: 2%;
+                                            left: 50%;
+                                            transform: translateX(-50%);} */
+#content .unesco .openBtn a .material-symbols-outlined{width: 100%;
+                                                        top: 40%;
+                                                        left: 50%;
+                                                        transform: translateX(-50%);
+                                                        position: absolute;
+                                                        color: #fff;
+                                                        opacity: 0;
+                                                        font-size:1.8em;
+                                                        transition: all .5s ease-out;}
+#content .unesco .openBtn:hover a .material-symbols-outlined{color:#f00;opacity:1;}
+#content .unesco .openBtn span i{color:#f00;padding: 5px;}
+#content .unesco .big p{line-height: 1.5em;
+    text-align: justify;
+    width: 90%; margin: 0 5%;}
+#content .unesco .big {max-height: calc(100vh - 200px);
+        overflow-y: auto;}
+#content .unesco .big .closeBtn{color:#333;font-size: 1.1rem;margin-top: 100px;}
+#content .unesco span{font-size: .9rem;display: block;}
+
+
+/* pooup css  */
+#content .unesco .pop_gallery .con1{ 
+        width: 50%;
+        height: 350px;
+        /* margin: 0 25%; */
+        border: 5px solid #333;
+        background: #f8f8f8;
+        position: fixed;
+        padding: 10px;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        /* margin-left: 50%; */
+        z-index: 50;
+        left: 50%;
+       }
+#content .unesco .pop_gallery dl {color:#333;}
+
+#content .unesco .pop_gallery .big .closeBtn{position: absolute; top: -90px;right: 1%;
+                                            font-size: 1.5rem; color: #f00; }
+
+
+ /* hover 효과 */
+#content .info{margin-top: 100px;}
+#content .info a{width:17%;top:0;left:50%; transform:translateX(-50%);
+                text-align: center;
+                font-size: .9em;
+                transition: all .3s ease-out;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                background: #111;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+                touch-action: manipulation;}
+#content .info a::before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-button-85 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+      @keyframes glowing-button-85 {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+#content .info a:after {
+                z-index: -1;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #222;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+                }
+
+#content .info a:hover{top:8px;}
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    
+} 
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+        
+	
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .unesco ul{ margin-top:50px;
+        grid-template-columns: repeat(2, 1fr);grid-gap:20px;}
+
+    #content .unesco .pop_gallery .con1{width:70%;height: 300px;padding: 10px;}
+            #content .unesco .openBtn a .material-symbols-outlined {transform: translateX(0);
+                   font-size: 1.1em; top: 1%;  opacity: 1; left: 44%;}
+                
+  
+      
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content section{width: 94%; margin: 0 3%;}
+    #content .unesco ul{grid-template-columns: repeat(1, 1fr);grid-gap:10px; }
+     
+}

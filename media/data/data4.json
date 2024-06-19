@@ -1,0 +1,15 @@
+{
+  "img1": [
+    {
+      "src": "./images/sub4_04.jpg",
+      "alt": "sub4_01 이미지"
+    }
+  ],
+
+  "text1": [
+    {
+       "title":"Maple Leafs",
+       "contents" : "The Toronto Maple Leafs (officially the Toronto Maple Leaf Hockey Club and often referred to as the Leafs) are a professional ice hockey team based in Toronto. The Maple Leafs compete in the National Hockey League (NHL) as a member of the Atlantic Division in the Eastern Conference. The club is owned by Maple Leaf Sports & Entertainment, a company that owns several professional sports teams in the city. The Maple Leafs' broadcasting rights are split between BCE Inc. and Rogers Communications. For the first 14 seasons, the team played its home games at the Mutual Street Arena, before moving to Maple Leaf Gardens in 1931. The Maple Leafs moved to their present home, Scotiabank Arena (originally named Air Canada Centre), in February 1999. The club was founded in 1917, operating simply as Toronto and known then as the Toronto Arenas. Under new ownership, the team was renamed the Toronto St. Patricks in 1919. In 1927, the franchise was purchased by Conn Smythe and renamed the Maple Leafs. A member of the 'Original Six', the club was one of six NHL teams to have endured the period of League retrenchment during the Great Depression. The club has won 13 Stanley Cup championships, second only to the 24 championships of the Montreal Canadiens. The Maple Leafs history includes two recognized dynasties,[broken anchor] from 1947 to 1951; and from 1962 to 1967."
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+/* 와이드 pc-sub1*/
+#content{width:100%;height: auto;position: relative;
+         margin: 0 auto;padding-bottom:100px;
+         background:rgba(0,0,0,.87); }
+#content h2{position: absolute; top: -350px;
+            width: 100%; text-align: center; font-size: 4em; color: #fff;}
+#content h3{font-size:2rem;padding:30px 0 0 1%;margin-bottom:30px;text-align: center;}
+#content section{width:100%;margin:0 auto;}
+
+
+#imgBG{display: block;}
+.down{display: block; font-size:.8rem; position: absolute; 
+        left:50%; transform: translateX(-50%); bottom:15%;font-family:"Libre Baskerville";
+       }
+@keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#fff;}
+      100% { transform:scale(1.2); opacity:0.8; color:#F39F30;}
+}	
+.down div{background: url(../images/scroll.png)50% 0% no-repeat;
+        padding-top: 80px; animation:ani 1.5s infinite  alternate;}
+
+/* sub4 에서 footer 영역 배경 opacity만 수정 */
+#footerArea .footer_container{background: rgba(0,0,0,.87);}
+
+
+/* ★ 컨텐츠 영역 */
+#content .content_area1{padding-bottom:200px;position: relative;}
+#content .content_area1 .tabs span{border-radius:50PX;
+    margin: 10px 15px 5px 20px;}
+#content .content_area1 .tabs li span{display: block;}
+#content .content_area1 .tabs .con1 {overflow: hidden;width:100%;padding:12px}
+#content .content_area1 .tabs .con1 li{float: left;width:160px;
+                                       text-align: center;border: 1px solid #f00;
+                                       border-radius: 50px;font-family:"Libre Baskerville";
+                                       margin: 0 10px 0 5px;}
+#content .content_area1 .tabs .con1 li:hover{box-shadow: 4px 4px 8px;background: #f00;color:#fff;}
+#content .content_area1 .contlist ul{display: flex;width: 98%; margin:50px 1% 0;align-items: center;}
+#content .content_area1 .contlist ul li{position: relative;overflow: hidden;transition: all .5s ease-out;}
+#content .content_area1 .content_area ul li dl{padding: 20px;}
+#content .content_area1 ul li dt{background: url(../images/sub4_big.jpg);
+        line-height: 1em;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background-clip: text;
+        color: transparent;font-family: 'Libre Baskerville';
+        position: relative;font-size:4em;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 50px;}
+#content .content_area1 ul li dd{text-align: justify;line-height: 1.7rem;word-break: break-all;}
+
+#content .content_area1 .contlist ul li:nth-child(1){width:40%;border-radius:10%;}
+#content .content_area1 .contlist ul li:nth-child(2){width:60%;}
+#content .content_area1 .contlist ul li:nth-child(1):hover {box-shadow:8px 8px 8px #F39F30;}
+#content .content_area1 .contlist ul li:nth-child(1):hover img{transform: scale(1.05);}
+#content .content_area1 .contlist ul li div{height: 100%;}
+#content .content_area1 .contlist ul li div img{transition: all .3s ease-out;
+        width: 100%; height: 100%; 
+        object-fit: cover;object-position: center;}
+
+.tabs .on{opacity: 1}
+#content .content_area1 .Maple{width:300px;height:150px;position: absolute; top: 8%; right: 1%;
+        background: url(../images/baseback.png)no-repeat;}
+#content .content_area1 .Maple img{ width: 100%; height: 100%; 
+        object-fit: cover;object-position: center;}
+
+#content .content_area1 .motion1 {
+                width:50px;
+                height:50px;
+                background: url(../images/baseball.png)no-repeat;
+                background-size: cover;
+                position: absolute;
+                top:8%;
+                right:15%;
+                animation: aboutmotion 10s infinite; }
+                @keyframes aboutmotion {
+                        0% {
+                           top: 8%;
+                           right: 0;
+                           opacity: 0;
+                        }
+                     
+                        10% {
+                           opacity:100;
+                           top: 8%;
+                        }
+                     
+                        100% {
+                           right:15%;
+                           transform: rotate(360deg);
+                        }
+                     }
+
+
+
+
+
+/*★video영역  */
+#content .youtube>p{width:96%;margin:0 2%; text-align: center;}
+#content .youtube .clip{display: flex;margin-top: 50px;}
+#content .youtube .clip .clip_part .contentArea {position: relative;width: 96%; margin: 30px auto;}
+#content .youtube .clip .clip_part { padding-top: 30px;margin-bottom: 60px;text-align: center;}
+#content .youtube .clip .clip_part .contentArea .imgPart { position: relative; cursor: pointer; margin-bottom: 30px;}
+#content .youtube .clip .clip_part .contentArea .imgPart .popup-youtube{position: relative;overflow: hidden;
+                                                           border-radius:30px;}
+#content .youtube .clip .clip_part .contentArea .imgPart .popup-youtube .playbtn{position: absolute;top: 40%;
+        left: 50%;transform: translateX(-50%);width: 100%;}
+#content .youtube .clip .clip_part .contentArea .imgPart:hover img{filter: brightness(.7);transform: scale(1.1);}
+#content .youtube .clip_part .contentArea .imgPart .popup-youtube>img {width: 100%;transition: all .3s ease-out;}
+#content .youtube .clip .clip_part .playbtn img {transition: all .5s ease-out;}
+
+#content .youtube .clip .clip_part .subTitle {font-size: 1.4em;color: #F39F30;font-weight: 500;}
+
+
+
+
+
+
+
+/* .clip_part .contentArea p {
+    color: #fff;
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+} */
+
+
+
+
+
+
+/* <-- 미디어 쿼리 영역 --> */
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+        /* #content .content_area1 .Maple{right:-180px;} */
+	
+} 
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+        #content{width:100%;}
+        /* #content .sub1_main{background: url(../images/sub1_main02.jpg) no-repeat 50% fixed;} */
+	#content .content_area1 .contlist ul{flex-direction: column;}
+        #content .content_area1 .contlist ul li:nth-child(1){width: 96%;margin: 0 2% 20px;box-shadow:8px 8px 8px #F39F30;}
+        #content .content_area1 .contlist ul li:nth-child(2){width: 100%;}
+
+        #content .content_area1 ul li dt{font-size:3.5em;
+                font-weight:800;text-decoration: solid #fff;
+                margin-bottom: 20px;
+                text-align: center;-webkit-text-stroke: 1px #F39F30;;
+                padding: 50px;}
+        #content .content_area1 .contlist ul li div img{height: 700px;}
+
+        #content .content_area1 .Maple {top:inherit;bottom: 0;right:0;}
+        #content .content_area1 .motion1 { bottom:3%;top:inherit;}
+        @keyframes aboutmotion {
+                0% {
+                   bottom:5%;
+                   right: 0;
+                   opacity: 0;
+                }
+             
+                10% {
+                   opacity:100;
+                   bottom:3%;
+                }
+             
+                100% {
+                   right:15%;
+                   transform: rotate(360deg);
+                }
+             } 
+
+
+        #content .youtube .clip{width: 100%;flex-wrap: wrap;}
+        #content .youtube .clip .clip_part {width:50%;}
+}
+
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+        #content{padding-bottom: 0;}
+        #content h2{font-size: 3em;}
+        #content .content_area1 .contlist ul li:nth-child(1){height:80%}
+        #content .content_area1 .tabs .con1 li{width:150px;margin: 0 5px 0 5px;font-size: 14px;}
+        #content .content_area1 .content_area ul li dl{padding: 0 10px;}
+        #content .content_area1 ul li dt{font-size:2em;
+                font-weight:800;text-decoration: solid #fff;
+                text-align: center;-webkit-text-stroke: 1px #F39F30;;
+                padding: 50px;}
+
+        #content .content_area1 ul li dd{line-height: 1.5rem;}
+
+
+
+/* <- 비디오영역-> */
+        .clip_part {
+                width:auto; float:none;}
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+        #content .sub1_main{background: url(../images/sub1_main04.jpg) no-repeat 50%;}
+	/* #content .sub1_main>p{font-size:1.5rem;} */
+        #content .content_area1 .tabs span{margin:5px}
+        #content .content_area1 .tabs .con1 li{width: 110px;font-size: 14px; margin-right: 2px;}
+        #content .content_area1 ul li dt{font-weight:800; margin-bottom:15px;  padding:30px;}
+        #content .content_area1 .contlist ul li div img{height:420px;}
+
+                /* <- 비디오영역-> */
+
+        .subTitle {
+                font-size: 1.5em
+        }
+        .clip_part .playBnt {
+                width: 95px;
+                height: 95px;
+                margin: -48px 0 0 -48px
+                }
+                .clip_part .contentArea {
+                width: auto
+                }
+                
+                #content .youtube .clip .clip_part {width:96%;margin:0 2%s}
+}
+

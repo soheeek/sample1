@@ -1,0 +1,15 @@
+{
+   "img1": [
+     {
+       "src": "./images/sub4_02.jpg",
+       "alt": "sub4_01 이미지"
+     }
+   ],
+ 
+   "text1": [
+     {
+        "title":"Toronto International Film Festival: TIFF",
+        "contents" : "The Toronto International Film Festival (TIFF, often stylized as tiff) is one of the most prestigious and largest publicly attended film festivals in the world, founded in 1976 and taking place each September. It is also a permanent destination for film culture operating out of the TIFF Lightbox cultural centre, located in Downtown Toronto.  The Toronto International Film Festival was first launched as the Toronto Festival of Festivals, collecting the best films from other film festivals around the world and showing them to eager audiences in Toronto. Founded by Bill Marshall, Dusty Cohl, and Henk Van der Kolk, the inaugural event took place from October 18 through 24, 1976. That first year, 35,000 filmgoers watched 127 films from 30 countries presented in ten programmes. Piers Handling has been the festival's director and CEO since 1994, while Noah Cowan became co-director of TIFF in 2004. In late 2007, Cowan became the artistic director of TIFF Lightbox, while longtime programmer Cameron Bailey succeeded as co-director. As of 2013, Bailey is now the artistic director of the Toronto International Film Festival, as well as TIFF Lightbox's year round programming."
+     }
+   ]
+ }
