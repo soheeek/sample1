@@ -1,0 +1,52 @@
+/* esg 경영 의 실제 본문 내용 */
+
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto;}
+
+
+/*con_top 영역 */
+#content .content_area .con_top {overflow: hidden; margin-bottom:150px;}
+#content .content_area .con_top h3{font-size: 2rem;margin-bottom:15px;}
+#content .content_area .con_top p{margin-bottom:50px;}
+#content .content_area .con_top ul li{float:left;width:400px;position: relative;}
+
+#content .content_area .con_top ul li dl{position: absolute; top:0px; left:0;
+                                        width:400px;height: 550px;
+                                        background: rgba(0,0,0,0.1); 
+                                        transition: all .5s ease-out;
+                                        color:#fff;
+                                        opacity: 0;
+                                        }
+#content .content_area .con_top ul li dl:hover{opacity: 1;background: rgba(0,0,0,.6);}
+#content .content_area .con_top ul li dt{font-weight: 600; font-size:1.6rem; text-align: center;margin:150px 0 30px 0;
+                                         opacity: 0;transition: all .5s ease-out;}
+#content .content_area .con_top ul li dd{text-align:justify;font-size:1.1rem;line-height:1.5em;
+                                        margin:10px 100px;opacity: 0;transition: all .5s ease-out;}
+#content .content_area .con_top ul li dd span{font-size:1.3rem;}
+#content .content_area .con_top ul li dl:hover dt{opacity:1;}
+#content .content_area .con_top ul li dl:hover dd{opacity:1;}
+
+
+
+/*con_bottom 영역 */
+#content .content_area .con_bottom{position: relative;margin-bottom:200px;}
+#content .content_area .con_bottom h3{font-size: 2rem;margin-bottom:15px;}
+#content .content_area .con_bottom p{margin-bottom:150px;}
+#content .content_area .con_bottom img{width: 2000px; height:800px;
+                                        position: relative;
+                                        left:50%; top:0;
+                                        transform: translateX(-50%);
+                                       }
+
+#content .content_area .con_bottom .container{position:absolute;top:350px;left:0;}
+#content .content_area .con_bottom .container dl{float:left;width:330px;height:550px;margin-right:50px;
+                                                backdrop-filter:blur(2px);color:#fff; border-radius: 30px;
+                                                transition: all .5s ease-out;
+                                                box-shadow: 2px 2px 10px 1px rgba(0,0,0,.4);
+                                               border:2px solid  rgba(0,0,0,0);}
+#content .content_area .con_bottom .container dl:hover{transform: scale(1);border:2px solid #fff; 
+                                                      backdrop-filter:blur(8px);}
+#content .content_area .con_bottom .container dl:last-child{margin-right: 0;}
+#content .content_area .con_bottom .container dt{font-weight:700;  font-size:1.6rem; text-align: center;margin:100px 0 30px 0;}
+#content .content_area .con_bottom .container dd{margin:0 30px;line-height: 1.7em;}
+

@@ -1,0 +1,24 @@
+/* 사업분야-리조트 의 실제 본문 내용 */
+
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+/* con_box2 영역  */
+#content .content_area .con_bottom{margin-bottom: 150px;}
+#content .content_area .con_bottom p{width: 100%; background:#f8f8f8;
+                        box-shadow:2px 2px 10px 1px rgba(0,0,0,.4);
+                        transform: skew(-15deg);
+                        margin-bottom: 20px;
+                        text-align: center;
+                        }
+#content .content_area .con_bottom .list01{margin-left:200px;}

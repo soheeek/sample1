@@ -1,0 +1,31 @@
+/* 개요 의 실제 본문 내용 */
+
+/* content area 영역 */
+#content .content_area {width:1200px; margin:0 auto;}
+#content .content_area p{margin: 50px 30px 0 30px;}
+
+#content .content_area li{overflow: hidden;margin-top:100px;}
+#content .content_area ul li .dl_left{float: right;}
+#content .content_area ul .img_right {float: right;}
+#content .content_area ul img{box-shadow: 0 3px 13px rgba(0,0,0,0.5);}
+
+
+
+#content .content_area ul li dl{margin-top:200px;}
+#content .content_area ul li dt{font-size:1.8em;font-weight: 600;margin-bottom:25px;}
+#content .content_area ul li dd{position: relative; width:550px;height: 330px;line-height: 1.7em; text-align: justify;}
+#content .content_area ul li dl a{position: absolute; top: -70px; right: 0;width:100px;
+                                 border-bottom :1px solid #fff;}
+#content .content_area ul li dl a:hover{content:'' ; border-bottom :3px solid #ED7D31;
+                                       transition: all .3s ease-out;}
+/* #content .content_area ul li dl .con_left a{position: absolute; top:-56px; right: 40px;
+                                            width: 110px;
+                                            } */
+#content .content_area ul li dl a span{transform: translate(5px, 5px);}
+
+
+
+
+
+
+

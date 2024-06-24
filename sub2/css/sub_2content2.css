@@ -1,0 +1,39 @@
+/* 호텔 의 실제 본문 내용 */
+#content .tabs{width: 1200px;margin:200px 0 100px;}
+
+#content .tabs ul {width:800px;margin:0 auto;overflow: hidden;
+                  border-bottom: 2px solid #ccc;}
+#content .tabs ul li{width:50%;float: left;text-align: center; box-sizing: border-box; border-radius: 30px 30px 0 0; overflow: hidden;}
+#content .tabs ul li a{font-size:1.2rem;font-weight:500;
+                 padding:15px 0; transition: all .5s;}
+#content .tabs ul li:hover a, #content .tabs ul li .current {color:#fff; background: #ED7D31}
+
+#content .container_box {margin-bottom:200px;display: none;}
+
+#content .top_box{position: relative;width: 2000px;height: 500px; left:50%; margin-left: -1000px;
+      background: url(../images/content2/back.jpg) no-repeat; background-attachment: fixed;overflow: hidden;
+      }
+#content .top_box p{text-align:justify ;line-height: 1.5em; color: #fff;
+    width: 1000px; margin: 150px auto; font-size: 1.3em;}
+#content .top_box p span {
+                        color: #ED7D31;
+                        font-weight: 500;
+                        font-size: 3rem;
+                        /* text-shadow: 1px 1px 10px rgba(0,0,0,.4); */
+                        }
+
+/* 서울 */
+#content .container_box{position: relative;}
+#content .container_box dt{font-size: 1.5rem;
+                           font-weight: 700;
+                           position: absolute;top: -70px;left: 43%}
+#content .container_box dd{width: 1000px;line-height:1.7em;margin-left: 100px; }
+#content .container_box dd:first-of-type{padding: 30px 0 15px 0;}
+#content .container_box dd span{color:#999;margin-right:15px;}
+#content .container_box img{border: 0; vertical-align: top;}
+#content .container_box .gallery{margin: 0 auto;}
+#content .container_box .gallery .big1, .gallery .big2{width: 800px; height:500px;margin-left: 16%;}/*큰이미지*/
+#content .container_box .gallery ul{overflow: hidden; list-style: none;margin-left: 15%;}
+#content .container_box .gallery li{float: left; margin: 10px; }
+#content .container_box .gallery li a{display: block; border: 3px solid rgba(255,0,0,0);}
+#content .container_box .gallery li a img{transition: all 1s;}

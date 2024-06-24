@@ -1,0 +1,61 @@
+/* 인재채용-채용안내 본문 내용 */
+
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto;}
+#content .content_area h3{font-size: 2rem;margin-bottom:15px;}
+
+/*con_top 인재상 영역 */
+#content .content_area .con_top{width:100%;margin-bottom:200px; position: relative;}
+#content .content_area .con_top p{font-size:2.78rem;font-weight:500;line-height: 1.7em;
+                                 margin-bottom:150px;}
+#content .content_area .con_top p span{color: #ccc;display: block; transition: all 1s;}   
+#content .content_area .con_top .round{display: block; position: absolute;
+         width:500px; height: 500px; background: #ED7D31; opacity: .1;
+         left: 150px; top:-50px; z-index: -1; border-radius: 50%;
+         transform: scale(.2); transition: all 1s ease-out; }                              
+#content .content_area .con_top .container{}
+#content .content_area .con_top .container ul{overflow: hidden; margin-top: 100px;} 
+#content .content_area .con_top .container li:nth-of-type(2){float:right;}
+#content .content_area .con_top .container li:last-of-type{clear: both;}
+#content .content_area .con_top .container li .right{float:right;
+                                                    margin: 150px 270px 0 0;
+                                                    margin-right: 270px;}
+#content .content_area .con_top .container dl{float:left;width:280px;
+                                                text-align: justify;
+                                                margin: 150px 60px 0 0;
+                                              position: relative;}
+#content .content_area .con_top .container dt{font-size: 1.3rem;font-weight:700;text-align: center;margin-bottom:30px;}
+#content .content_area .con_top .container dd{}
+
+#content .content_area .con_top .container dl img{width: 110px;
+                                                    height: 110px;
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 350px;}
+#content .content_area .con_top .container dl .icon{position: absolute;top: 10px; left: -150px;}
+
+
+                                                  
+/*con_bottom 전형절차 영역 */
+#content .content_area .con_bottom{margin-bottom:150px;}
+#content .content_area .con_bottom {position: relative;}
+#content .content_area .con_bottom  ul{overflow: hidden; margin-top: 100px;}
+#content .content_area .con_bottom  ul li{float: left; width:25%; height: 260px; background: #fff; text-align: justify; position: relative; overflow: hidden;}
+#content .content_area .con_bottom  ul li::before{content: ""; display: block; width: 340px; height: 350px; box-shadow: 1px 0 5px 5px rgba(0,0,0,.2) inset; position: absolute; left: 0; top: -50px;}
+#content .content_area .con_bottom  li span{font-size: 2.3em; font-weight: 700; color: #ccc; position: absolute; left: 50%; top: 5px; transform: translate(-50%); transition: all .3s ease-out;}
+#content .content_area .con_bottom  li:hover span{opacity: 0;}
+
+#content .content_area .con_bottom  dl{padding-top: 55px; position: relative; height: 165px; overflow: hidden; text-align: center;}
+#content .content_area .con_bottom  dl dt{font-size: 1.125em; font-weight: 700; margin: 80px 70px 0; transition: all .3s ease-out;}
+#content .content_area .con_bottom  li:hover dl dt{margin-top: -10px;}
+#content .content_area .con_bottom  dl dt::after{content: ""; display: block; width: 70px; height: 140px; background: #ED7D31; position: absolute; left: 0; top: 80px; transition: all .3s ease-out; mix-blend-mode: multiply;}
+#content .content_area .con_bottom  li:hover dt::after{width:250px; border-radius: 0; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,176,69,1) 66%);}
+#content .content_area .con_bottom  dl dd{margin: 20px 70px 0; position: relative; z-index: 20; opacity: 0; 
+                                         transition: all .3s ease-out;font-weight: 500;}
+#content .content_area .con_bottom  li:hover dl dd{opacity: 1;}
+#content .content_area .con_bottom  div{position: relative;}
+#content .content_area .con_bottom  div i{font-size: 50px; background: #fff; display: block; width: 100px; height: 100px;text-align: center; line-height: 100px; position: absolute;  top: -160px;}
+#content .content_area .con_bottom  div i:nth-of-type(1){left: -50px;}
+#content .content_area .con_bottom  div i:nth-of-type(2){left:250px;}
+#content .content_area .con_bottom  div i:nth-of-type(3){left:550px}
+#content .content_area .con_bottom  div i:nth-of-type(4){left:850px;}

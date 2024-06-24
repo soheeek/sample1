@@ -1,0 +1,75 @@
+/* 사회공헌 실제 본문 내용 */
+
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto;}
+#content h3{font-size: 2rem;margin-bottom: 15px;}
+#content p{line-height: 1.7em;margin-bottom:100px;}
+
+/* con_top 영역 */
+#content .content_area .con_top{margin-bottom:150px;position:relative;}
+#content .content_area .con_top img{margin-top: 50px;border-radius:0 100px 0 100px;}
+#content .content_area .con_top p{line-height: 1.7em;font-size:1.7rem;font-weight: 600;
+                                 width: 332px;height: 155px; position: absolute;top:120px;right:170px;}
+#content .content_area .con_top span{display: block; line-height: 1.7em;width:285px;height:180px;
+                                    font-size: 1.1rem;
+                                    position: absolute;top: 310px;right: 220px
+                                    }
+#content .content_area .con_top span::before{content: '';display: block; width:2px;height:130px;
+                                            background: #999;
+                                            position: absolute;
+                                            left: -15px;
+                                            top: 0;}
+
+
+/* con_bottom 영역  */
+#content .content_area .con_bottom{width: 100%;position: relative;margin-bottom:150px;}
+#content .content_area .con_bottom::before{content: 'HANWHA'; font-size: 23em; font-weight: 900; opacity: .03;
+                                            position: absolute; top:-200px; left:50%;
+                                            margin-left:-940px;
+                                            }
+#content .content_area .con_bottom  p{margin-bottom: 100px;}
+
+
+
+#content .content_area .con_bottom .box{margin-top: 40px;width:1200px; position: relative; overflow: hidden}
+#content .content_area .con_bottom .notice_content{margin-top: 40px;width:4000px;
+                                                    position: relative;overflow: hidden;}
+#content .content_area .con_bottom .notice_content ul{float: left;}
+#content .content_area .con_bottom .notice_content ul li{float: left;width:370px;margin:0 15px;
+                                                        background-color: #edf4ff;transition: all .5s ease;}
+#content .content_area .con_bottom .notice_content ul li:hover{background:#ED7D31;box-shadow: 2px 2px 10px 2px rgba(0,0,0,.6);}
+#content .content_area .con_bottom .notice_content ul li a{text-decoration: none;display: block;}
+#content .content_area .con_bottom .notice_content ul li img{width: 100%;overflow: hidden;vertical-align: top;}
+#content .content_area .con_bottom .notice_content ul li dl{padding: 30px 10px 0;}
+#content .content_area .con_bottom .notice_content ul li:hover dl span{color: #fff;}
+#content .content_area .con_bottom .notice_content ul li:hover dl{color: #fff;}
+#content .content_area .con_bottom .notice_content ul li dt{font-weight:600;font-size: 1.25em;text-align: center;}
+#content .content_area .con_bottom .notice_content ul li dd {margin:10px 20px 10px 20px;text-overflow: ellipsis;overflow: hidden;height: 126px;}
+#content .notice_btn{position: absolute;right: 100px;top: 150px;overflow: hidden;}
+#content .notice_btn a{float: left;}
+#content .notice_btn i{font-size:2.6em;color: #ccc; margin-right: 10px;}
+#content .notice_btn a:hover i{color:orange}
+
+/* base */
+
+#content .product{width:1200px; margin: 50px auto 150px;}
+#content .product h3{text-align: center; margin: 40px 0;}
+
+#content .product .serch_box{width:580px; margin: 20px auto 100px;}
+#content .product .serch_box label{font-size: 22px;}
+#content .product .serch_box input{font-size:1.1rem;padding: 10px 20px;
+                                   border: 1px solid #999; border-radius: 15px;}
+#content .product .serch_box button{width: 100px; padding: 5px 0; font-size: 18px; border: 0; 
+                                    background: #ED7D31; color: #fff;
+                                    font-weight: bold; border-radius: 10px;}
+#content .product .serch_box .btn_all{background:#6C5F5B;}
+
+#content .product ul{overflow: hidden;}
+#content .product li{width: 25%; height:300px; float: left; text-align: center;padding-top: 10px;}
+#content .product li img{width:210px;height: 150px;box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);}
+#content .product li dl{width: 200px; margin: 15px auto;} 
+#content .product li dt{font-size:18px ; font-weight: bold; margin-bottom: 10px;}
+#content .product li dd{line-height: 1.5em;}
+
+
+

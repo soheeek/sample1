@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+/* 비주얼영역 */
+.visual{width: 2000px;
+       position:relative;
+       left:50%; top:0;background: #000;
+       transform: translateX(-50%);}
+       
+.visual .gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1000px;}
+.visual .gallery li{display:none; position: relative;}
+       
+.visual .gallery img{animation: ani 30s linear infinite;}
+       @keyframes ani {
+           from {transform: scale(1);}
+           to {transform: scale(1.1);}
+       }
+       
+.visual .gallery li span{position: absolute; left: 450px; top:500px; opacity: 0; 
+              /*글자 이미지위로 올라가야하니까absolute, opacity 0 하고 나타나는 효과 */
+                        font-size: 50px; color:#fff ; }
+       
+       /*.gallery .link1 span{ left:  100px; top: 300px;} */
+       
+.visual .dock{width:330px;height:50px;position:absolute;left: 455px;top:700px;overflow: hidden;padding:10px 0;}
+.visual .dock .mbutton{margin-right:15px; cursor:pointer;
+                       display:block; float:left; width:20px; height:5px;
+                       background:#333; border-radius:8px;
+                       transition: all .5s} /*선택안된상태일때 */
+       
+.visual .dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+                   display:block; float:left; width:25px; height:25px;} /*play ,stop버튼 */
+.visual .dock .ps i, .btn{font-size:27px;color:#E48F45;}   
+.visual .dock .ps i:hover, .btn:hover{color:#fff;}
+.visual .dock .btn{ margin-right: 10px;
+                      margin-top: -15px;
+                      cursor: pointer;
+                      display: block;
+                      float: left;
+                      width: 30px;
+                      height: 30px;} /*left right버튼 */
+
+
+
+                              
+
+/*  본문 컨텐츠 영역  */
+#content {width:1200px;margin: 0 auto;} 
+
+
+/*비전영역*/
+#content .vision {position: relative;
+  width: 2000px;
+  left: 50%;
+  margin-left: -1000px;
+  background-color: #fff;
+  overflow: hidden
+  }
+#content .vision::before{content: 'HANWHA'; font-size: 23em; font-weight: 900;
+      opacity: .04; position: absolute; top:570px; left:47%; margin-left: -900px;
+      /* transform: rotate(10deg); */
+        }
+#content .vision .vision_con {width:1200px;  position:relative;
+                 overflow:hidden; margin:0 auto;
+                 }
+#content .vision h3{text-align: center; font-size:2.78em; color: #333; position: relative; margin: 100px 0 30px;}
+#content .vision p{text-align: center; font-weight: 500; margin-bottom: 60px; font-size: 1.1em   ;}
+
+#content .vision ul{margin:60px auto 0;overflow: hidden;padding: 50px 0 150px; width: 1105px;}
+#content .vision ul li{float:left;width: 331px;
+                      position: relative;overflow: hidden;
+                      margin-right:50px;}  
+#content .vision ul li:hover{box-shadow: 2px 2px 10px 1px rgba(0,0,0,.4);}
+#content .vision ul li img{transition: all .5s ease-out;}
+#content .vision ul li:hover img{transform: scale(1.2);}
+#content .vision ul li:last-child{margin-right: 0;}   
+#content .vision ul li dl{width: 331px; height:528px;
+    position: absolute; top:445px; left:0; background: rgba(0,0,0,.6); transition: all .5s ease-out;}                        
+#content .vision ul li:hover dl{top:0; }
+
+#content .vision ul li dt{color:#fff;margin: 15px 0 20px; 
+                          text-align: center; font-size: 1.85rem; transition: all .5s ease-out;}
+#content .vision ul li:hover dt{margin:100px 0 20px;font-size: 2.2rem;}
+#content .vision ul li dd{color:#fff;text-align:justify; margin: 0 50px; line-height: 1.5em;}
+#content .vision ul li dd span{font-size: 6em; display: block; text-align: center;
+     margin-bottom: 20px; font-weight: normal;}
+#content .vision .more{position: absolute; right: 56px; top:200px ;
+           font-size: 1rem;}
+#content .vision .more:hover{color:#333;
+                            font-weight:500;
+                            transition:all .3s ease-out;
+                            color:#E48F45; 
+                            }
+
+/*사업분야*/
+#content .buissness{width: 2000px; position: relative; left: 50%; top: 0;
+                    margin-left: -1000px; overflow: hidden;}
+#content .buissness h3{text-align: center;font-size:2.78em;margin: 100px 0 30px 40px;}
+#content .buissness p{text-align: center;font-weight: 500; 
+                     margin-left: 40px;margin-bottom: 30px;
+                     font-size: 1.1em;}
+
+/* #content .buissness .btn{position: relative;}
+#content .buissness .btn a{display: block;color:#fff;}
+#content .buissness .btn li:nth-of-type(1){position: absolute;top:400px;left:210px;z-index: 1;transition: all .3s ease-out;}
+#content .buissness .btn li:nth-of-type(2){position: absolute;top:400px;left:710px;z-index: 1;}
+#content .buissness .btn li:nth-of-type(3){position: absolute;top:400px;left:1210px;z-index: 1;}
+#content .buissness .btn li:nth-of-type(4){position: absolute;top:400px;left:1710px;z-index: 1;} */
+
+
+#content .buissness .container_box{width: 2000px; height:800px;
+                       position: relative; left:50%; top:0;
+                       transform: translateX(-50%);
+                       }
+
+#content .buissness dl{width:500px;height:800px; text-align: center;position: relative;
+                       color: #fff;float: left;transition: all .8s;}
+#content .buissness dl img{position: absolute; z-index: -1; width: 100%; display: none;}
+#content .buissness dl:nth-of-type(1) img{position: absolute; display: block;}
+#content .buissness dl:nth-of-type(2) img{position: absolute;left: -25%;}
+#content .buissness dl:nth-of-type(3) img{position: absolute; left:-50%;}
+#content .buissness dl:nth-of-type(4) img{position: absolute; left:-75%;}
+#content .buissness dl:hover{background: rgba(0, 0, 0, .7);}
+#content .buissness dl:hover img{display: block;}
+#content .buissness dl:hover span{display: none;}
+#content .buissness dl:hover dd:nth-of-type(2), dd:nth-of-type(3), dd:nth-of-type(4){visibility: visible;}
+
+
+#content .buissness dt{font-size:2em; font-weight:800;padding-top:300px;}
+#content .buissness dd:nth-of-type(1){position: absolute; top: 0; width: 2000px; margin: 0; display: block; z-index: -1;}
+#content .buissness dd:nth-of-type(2){font-size: 1em; font-weight: 400; padding:50px 100px;
+                                     text-align: justify; visibility: hidden; 
+                                     transition: all .3s ease-out;}
+
+#content .buissness .container_box dd:nth-of-type(3){position: absolute;left:180px;bottom:300px;
+                                                     width:150px;height:40px;color:#fff;font-weight:600;
+                                                     background:rgba(0, 0, 0, .3);;
+                                                     border:1px solid #fff;transition: all .3s ease-out;}      
+#content .buissness dl:hover dd:nth-of-type(3){left:180px;bottom:170px;}
+#content .buissness dd:nth-of-type(3) .more{color:#fff;font-weight:600;padding-top:5px;} 
+#content .buissness .container_box dd:nth-of-type(3):hover .more{font-weight:500;color:#E48F45; transition:all .3s ease-out;}
+
+        
+/*사회공헌*/
+#content .together{width:2000px; background: #f8f8f8;
+                  position:  relative;
+                  left: 50%; top: 0; transform: translate(-50%); 
+                  clear:both; height:1200px; overflow:hidden;}
+#content .together .together_top{width:1200px; margin: 0 auto;}
+#content .together h3{font-size:2.78em;margin: 100px 0 30px 40px;}
+#content .together p{font-weight: 500; margin:0 0 70px 40px; font-size: 1.1em;}
+
+#content .together .together_con{background: url(../mainimages/section_together.jpg);background-size: cover;
+                height:700px; margin-bottom: 120px; overflow: hidden;}
+#content .together .together_con:hover{cursor: url(../mainimages/swipe.png) 20 30, auto;}
+#content .together ul{padding: 100px 0;}
+#content .together li{width: 300px; height: 520px;
+                        border:2px solid rgba(0,0,0,0);
+                        border-radius: 20px; color: #333;
+                        transition: all .5s ease-out; 
+                        backdrop-filter:blur(10px);
+                        }
+
+#content .together li:hover{transform: scale(1.1);backdrop-filter:blur(30px);
+                            color: #fff;
+                              box-shadow: 2px 2px 10px 1px rgba(0,0,0,.4);
+                              border:2px solid #fff;}
+#content .together li:last-child{margin-left: 0;}
+
+#content .together li dl{}
+#content .together li dt{ margin: 80px 0 40px; text-align: center;
+  font-size: 1.3em; font-weight: 600;color: #fff; }
+#content .together li dd{line-height:1.7em;
+                        margin: 0 25px; text-align:justify; 
+                        color:#fff;font-size: .9rem;}
+
+#content .together .more{position: absolute; top:200px; left: 50%; 
+                         margin-left:500px;}
+#content .together .more:hover{color:#333;
+                            font-weight:500;
+                            transition:all .3s ease-out;
+                            color:#E48F45; 
+                            }
+#content .together.swiper-container {width: 1200px;height: auto;}
+                                    
+
+
+/*지속가능경영*/
+
+#content .sustainability {width:1200px;  margin:0 auto;position: relative}
+#content .sustainability .sustainability_top{width:1200px; margin: 0 auto; }
+#content .sustainability h3{font-size: 2em;margin:100px 0 30px 40px;}
+#content .sustainability p {font-weight:500; margin:0 0 70px 40px; font-size: 1.1rem;line-height: 1.7em;}
+
+
+
+/* #content .sustainability ul {overflow: hidden; display: flex; border-radius: 40px;
+                             box-shadow: 2px 2px 10px 1px rgba(0,0,0,.4);}
+#content .sustainability ul li{width:600px; height:722px; position: relative;}
+#content .sustainability ul li:first-child{background:url(../mainimages/sustainability_01.jpg);}
+#content .sustainability ul li:nth-child(2){background:url(../mainimages/sustainability_02.jpg);}
+#content .sustainability ul li:last-child{background:url(../mainimages/sustainability_03.jpg);}
+
+
+#content .sustainability ul li dl{width:600px; height:722px;position: absolute; 
+                                 top:0; left: 0;color: #fff; overflow: hidden;}
+#content .sustainability ul li dl:hover{width: 600px; position:relative; right:200px;
+                                        transition:all .5s ease-out;
+                                          } 
+
+
+
+#content .sustainability ul li dt{font-size: 1.5rem; font-weight: 700; 
+                                  margin:200px 350px 0 40px;}
+#content .sustainability ul li dl:hover dt{
+                                  font-size: 2rem; font-weight: 700;
+                                  margin:300px 200px 0 300px; text-align:justify; 
+                                  position:relative; right:200px;
+                                  transition:all .5s ease-out;
+                                  }
+
+#content .sustainability ul li dd{color:#fff;
+                                  line-height:1.8rem;
+                                  text-align:justify;
+                                  position: absolute; top: 400px;
+                                  left:0; margin-left: 100px;
+                                  width: 400px; opacity: 0;
+                                  transition: all .5s;
+                                  }
+#content .sustainability ul li:hover dd{opacity: 1;}
+
+
+#content .sustainability ul li img:hover{filter: brightness(.2); transition:all .5s ease-out;
+                                         width: 600px;} */
+
+
+#content .sustainability ul {overflow: hidden; display: flex; border-radius: 40px;
+                            justify-content: center;gap: 10px;}
+#content .sustainability ul li{width:600px; height:722px; position: relative;
+                            position: relative; overflow: hidden; width:500px; border-radius: 20px;}
+#content .sustainability ul li:first-child{background:url(../mainimages/sustainability_01.jpg);}
+#content .sustainability ul li:nth-child(2){background:url(../mainimages/sustainability_02.jpg);}
+#content .sustainability ul li:last-child{background:url(../mainimages/sustainability_03.jpg);}
+
+
+.sustainability li img{transition: all .5s;}
+.sustainability li:hover img{transform: scale(1.1); filter: grayscale(100%);}
+.sustainability dl{position: absolute;left:0; top:0; background:none;
+                    height: 722px;width:100%; transition: all .5s;}
+.sustainability dt{color: #fff; font-weight: bold; font-size: 1.5em; text-align: center;
+                   margin-top: 200px; transition: all .3s;}
+.sustainability dd{font-size: 1em; line-height: 1.5em; color: #fff;
+                   text-align: justify; margin: 50px 30px 0; opacity: 0;}/*dd에는 transition 안주고 script에 줌 , 자연스러워짐 */
+
+
+
+.sustainability .more{position:absolute;top:100px;left:50%;
+                     margin-left:499px; color:#333; 
+                     }
+.sustainability .more:hover{color:#333;
+                        font-weight:500;
+                        transition:all .3s ease-out;
+                        color:#E48F45;}
+
+
+/*인재채용*/
+#content .hr{width:2000px; height: 600px;
+              background:url(../mainimages/hr_01.jpg);
+              position:relative;
+              left:50%; top:0;
+              transform: translateX(-50%);
+              margin:150px 0;
+              }
+#content .hr .hr_con {width: 1200px;height: 600px; margin: 0 auto; position: relative; overflow: hidden;}
+#content .hr .hr_con h3{font-size:2.78em;margin:100px 0 0 40px; color: #fff;}
+#content .hr .hr_con p:nth-of-type(1){font-weight:500; font-size: 1.1rem; padding:5px 0 0 40px;color: #fff;}
+
+#content .hr .con_sub {position:absolute;top:350px;left:40px;
+                     color:#fff; text-align:justify;
+                     width:600px;
+                     line-height: 1.7em;}
+
+
+
+#content .hr a{background: #5e4335;
+               color:#fff; border-radius:7px;
+               height:50px;
+               width:120px;text-align: center;
+               position: absolute;top:360px;right:100px;
+               transition: all .3s;
+                }
+#content .hr a:hover{transition: all .3s ease-out;
+                     color:#5e4335;font-weight: 600;} 
+
+#content .hr a::before{content: "";display: block; height:50px; width:0 ; 
+                      background:#fff; border-radius:7px;
+                      position: absolute; left: 0; top:0; transition: all .3s ease-out;}
+#content .hr a:hover::before{width:120px;}
+#content .hr a span{display: block;
+                  position: relative; z-index:10;padding: 7px 10px 0 15px;
+                  transition: all .5s ease-out;font-weight: 600;padding-top: 10px;}

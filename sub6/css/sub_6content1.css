@@ -1,0 +1,30 @@
+/* 공지사항 본문 내용 */
+@charset "utf-8";
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto;}
+#content .content_area h3{font-size: 2rem;margin-bottom:15px;}
+
+/*con_top  영역 */
+#content .content_area .con_top{width:100%;margin-bottom:150px;}
+
+
+
+                                                
+
+
+/* CSS Document */
+
+#content .content_area .faq{width:800px; margin:0 auto; border-bottom:1px solid #ddd;font-size:12px}  
+#content .content_area .faq .hgroup{ position:relative;margin:0 0 10px 0;}  
+#content .content_area .faq .hgroup .all{position:absolute; top:5px; right:10px; color:#333; text-decoration:none;}  
+#content .content_area .faq ul{margin:0;padding:0;list-style:none}  
+#content .content_area .faq .q{margin:0;border-top:1px solid #ddd; position: relative;}  
+#content .content_area .faq .q a.trigger{display:block;padding:10px 15px;background:#fafafa;color:#333;text-align:left;text-decoration:none ;}  
+#content .content_area .faq .hide .q a.trigger{font-weight:normal;background:none}  
+#content .content_area .faq .q a.trigger:hover,  
+#content .content_area .faq .q a.trigger:active,  
+#content .content_area .faq .q a.trigger:focus{background:#feeddd;color:#000} 
+#content .content_area .faq .q span{display: block; position: absolute; right: 15px; top:10px} 
+#content .content_area .faq .a{margin:0;padding:10px 15px;line-height:1.5;
+    padding-bottom:10px; margin-top:0px; margin-bottom:0px; height:36px; 
+    padding-top:10px; display: none;} 

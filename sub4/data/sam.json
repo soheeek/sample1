@@ -1,0 +1,21 @@
+{
+    "sam": [
+        {"Name":"한국메세나협회","Image":"./images/content2/data01.jpg"},
+        {"Name":"월드비전","Image":"./images/content2/data02.jpg"},
+        {"Name":"한국희귀 · 난치성질환 연합회","Image":"./images/content2/data03.jpg"},
+        {"Name":"사회복지공동모금회","Image":"./images/content2/data04.jpg"},
+        {"Name":"도서출판 점자","Image":"./images/content2/data05.jpg"},
+        {"Name":"예술의전당","Image":"./images/content2/data06.jpg"},
+        {"Name":"중구문화원","Image":"./images/content2/data07.jpg"},
+        {"Name":"대한불교조계종사회복지재단","Image":"./images/content2/data08.jpg"},
+        {"Name":"사랑의 장기기증 운동본부","Image":"./images/content2/data09.jpg"},
+        {"Name":"한국소아암재단","Image":"./images/content2/data10.jpg"},
+        {"Name":"성공회 푸드뱅크","Image":"./images/content2/data11.jpg"},
+        {"Name":"초록우산 어린이재단","Image":"./images/content2/data12.jpg"},
+        {"Name":"문화재청","Image":"./images/content2/data13.jpg"},
+        {"Name":"아름다운 가게","Image":"./images/content2/data14.jpg"},
+        {"Name":"굿네이버스","Image":"./images/content2/data15.jpg"},
+        {"Name":"한문화재 한지킴이","Image":"./images/content2/data16.jpg"}
+  
+    ]
+}

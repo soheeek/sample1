@@ -1,0 +1,91 @@
+/* 연혁의 실제 본문 내용 */
+
+
+/* content area 영역 */
+#content .content_area {width:100%;margin:0 auto 150px 0;}
+#content .content_area h3{font-size: 2rem;margin-bottom:15px;text-align: center;}
+#content .content_area p{text-align: center;margin-bottom: 100px;}
+#content .content_area p span{font-weight: 600;color:#8E3200;}
+
+
+/*가상클래스 CSS ( 상단에 고정 sticky menu) */
+#content .content_area .navOn{position: fixed; width: 100%;z-index:60; left:0; top: 0;
+     background: #fff;box-shadow: 1px 1px 10px 1px rgba(0,0,0,.2)}
+
+#content .boxMove{top:0; opacity: 1 ; transform: scale(1);}
+#content .navBox ul li a.spy{background:#ED7D31; color: #fff}
+
+/*content_menu 영역 */
+#content .content_area  .content_menu{width: 1000px; margin: 0 auto; overflow: hidden;}  
+#content .content_area  .content_menu li{
+                                width: 25%; float: left; 
+                                text-align: center; position: relative;}
+#content .content_area .content_menu li:first-child:before{
+    content: ''; display: block;
+    width: 1px; height: 30px; background: #ccc;
+    position: absolute; left: 0; top: 30px;}
+#content .content_area .content_menu li::after{
+    content: ''; display: block;
+    width: 1px; height: 30px; background:#ccc;
+    position: absolute; right: 0; top: 30px;}
+#content .content_area .content_menu li a{
+    display: block; position: relative;
+    font-size: 1.5em; font-weight: 700; 
+    padding: 20px 0; margin-top: 10px;
+    transition: all .3s ease-in-out;}
+#content .content_area .content_menu li a::before{
+    content: ''; display: block; 
+    width: 50px; height: 50px; 
+    background: rgba(255, 165, 89, 1); border-radius: 50%;
+    position: absolute; left:50px; top: 0;
+    z-index: -10; opacity: 0; transform: scale(0);
+    transition-duration: .3s;}
+#content .content_area .content_menu li a:hover::before , 
+#content .content_area .content_menu li a.current::before{
+    opacity: 1; transition: all .5s ease-in-out; transform: scale(1);}
+#content .content_area .content_menu li a::after{
+    content: ''; display: block;
+    width: 180px; height: 5px; background: rgba(255, 165, 89, 1);
+    border-radius: 100px; opacity: 0;
+    position: absolute; left:50px; bottom: 0;
+    transform: scaleX(0);}
+#content .content_area .content_menu li a:hover::after ,
+#content .content_area .content_menu li a.current::after{
+    opacity: 1; transition: all .5s ease-in-out;
+    transform: scaleX(1); transition-delay: .1s; transition-duration: 1s;}
+    
+/* 가상클래스 css 수정 영역 */
+#content .content_area section{position: relative;}
+#content .content_area h4{display:block;height:150px;font-size: 3em;font-weight: 700;
+                          padding-top:35px;text-align: center;
+                          color:#ED7D31;background: #fff;
+                          }
+#content .content_area .history_list::before {content: ""; display: block; 
+                                             width: 4px; height: 5000px;
+                                             background: #ED7D31; position: absolute;left:60%;top:130px; 
+                                             margin-left: -150px; z-index: -1;}
+#content .content_area .history_list dl{font-size: 1.5em;margin-bottom:5px;position: relative;overflow: hidden;}
+#content .content_area .history_list dl::before {content: ""; display: block; 
+                                                width: 30px; height: 30px; 
+                                                background: #fff; border: 3px solid  #ED7D31;
+                                                position: absolute; left:60%; top:0;
+                                                margin-left: -166px; border-radius: 50%;}
+
+#content .content_area .history_list dl dt{position: relative;left: 20%;font-weight: 700;font-size:2.5rem;}
+#content .content_area .history_list dl dt::before{
+                                        content: "";display: block;
+                                        width:45px;height:45px;
+                                        background:#ED7D31;
+                                        opacity: .8;border-radius: 50%;
+                                        position: absolute;top:0;left:-15px;
+                                        z-index: -1;}
+#content .content_area .history_list dl dd{position: relative;top: -50px;left: 55%; width:550px;}
+
+
+/*span영역*/
+#content .content_area .history_list dl dd span{color:#999;margin-right: 10px;}
+
+
+/*scroll체크*/
+.text{position: fixed; right:0; top: 0;display: none;
+    font-size: 50px; z-index: 100}

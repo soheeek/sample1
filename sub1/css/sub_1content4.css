@@ -1,0 +1,46 @@
+/* vision 의 실제 본문 내용 */
+*{margin:0;padding:0}
+#content .title_area p{margin-top: 30px;}
+
+.content_area{width: 1200px;margin: auto;}
+
+/* 지도영역  */
+.map_api{margin-top:100px;}
+.map_api #map{width:1200px; height:800px;
+              border:2px solid #999;}
+
+
+
+
+/* 오시는길 텍스트 영역  */
+.content_area .map_con {margin-bottom: 100px;}
+.content_area .map_con .con1 li{display:flex;
+                                align-items: baseline;
+                                padding: 40px 20px;
+                                border-bottom: 1px solid rgb(218, 224, 233);
+                                }
+.content_area .map_con .con1 li:first-of-type{gap:110px;}
+.content_area .map_con .con1 li:nth-of-type(2){gap:75px;}
+.content_area .map_con .con1 li:last-of-type{gap:30px;}
+.content_area .map_con .con1 li>span{font-weight:600;position: relative;}
+.content_area .map_con .con1 li>span::after{content: '';
+                                            width: 1px;
+                                            height: 50px;
+                                            background: #ccc;
+                                            position: absolute;
+                                            top: -10px;
+                                            left: 120px;}
+
+.content_area .map_con .con1 li p{width: 120px;font-weight:700;font-size: 1.1em;position: relative;}
+.content_area .map_con .con1 li p::after{content: '';
+                                        width: 1px;
+                                        height:170px;
+                                        background: #ccc;
+                                        position: absolute;
+                                        top: -10px;
+                                        left: 120px;}
+.content_area .map_con .con1{box-shadow: 0 10px 13px -4px rgba(0,0,0,.1);}
+.content_area .map_con .con1 li dt{margin-bottom: 10px;font-weight:600; font-size: 1.1em;}
+.content_area .map_con .con1 li dd{margin-bottom: 10px;width:400px; line-height: 1.5em;}
+.content_area .map_con .con1 li dd span{font-weight:600;color: blue;}
+.content_area .map_con .con1 li dd .last{color:green;}

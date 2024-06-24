@@ -1,0 +1,53 @@
+/* 회사소개의 공통 */
+
+
+/* visual영역 */
+.visual{width: 2000px; height:400px;
+       position: relative;
+       left: 50%; top:0;transform:translateX(-50%);} /*백그라운드 이미지로 깔고싶으면 높이까지 지정해주기!! */ 
+.visual span{font-size:1.6em;display: block;  color: #fff;
+              position: absolute; top:220px; width:100%;
+              text-align: center;
+             } /*span은 웬만하면 블럭처리하기 */
+
+
+/* 서브메뉴 영역 */
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul {overflow: hidden; width:1200px; margin: 0 auto;}
+.sub_nav ul li{width:50%;float: left;text-align: center;}
+.sub_nav ul li a{font-size:1.2rem;font-weight:500;
+                 padding:15px 0;}
+.sub_nav ul li a:hover,.sub_nav ul li .current{border-bottom:3px solid  #ED7D31; font-weight:800;}
+
+
+ /* title Area 영역 */
+#content{width:1200px; margin:0 auto;}
+#content .title_area{height:500px;position: relative;
+                    overflow: hidden;
+                    } /*높이를 잡아주기 그래야 position등 때릴때 잡아줌*/
+#content .title_area .line_map{position: absolute;right:0;top:20px;}
+#content .title_area .line_map .material-symbols-outlined {position: absolute;left:-29px ;top:2px;}
+#content .title_area h2{font-size:3.5em; text-align: center;position:relative;
+                       margin-top:100px;}
+/* #content .title_area h2::before{content: '';
+         display: block; position: absolute;top:-50px;
+         font-size:1rem ;
+         width: 100%; text-align: center;} */
+         /* h2앞에 영문or 슬로건 있을때 넣어주기!!! */
+
+#content .title_area h2::after{content: ''; width:5px;height: 100px;
+                                background:#ED7D31;
+                                position: absolute;top:200px;left:50%;
+                                 }
+#content .title_area p{font-size:1.1em; text-align: center; margin-bottom: 200px;}
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
