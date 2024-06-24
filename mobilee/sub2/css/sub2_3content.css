@@ -1,0 +1,33 @@
+/* mobile   상생경영 css  */
+#content{margin-bottom: 50px;}
+#content .content_area {width:96%;margin:0 2%;position: relative;}
+#content .content_area h3{    font-size: 1.6rem;font-weight: 700; margin-bottom: 10px;text-align: center;}
+#content .con_box1,#content .con_box2{margin-bottom: 50px;}
+
+/* con_box1 */
+#content .con_box1{width:100%}
+#content .con_box1 .box1_maintext{text-align: justify;padding:10px;line-height: 1.8rem;font-size: 1.1rem;}
+#content .con_box1 ul li{font-weight: 600; margin: 5px;color:#ED7D31;}
+#content .con_box1 img{ width:84%; height:250px; margin:15px 8%;
+                       border-radius:0 15% 0 15%;
+                       box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .4);}
+#content .con_box1 ul li p{position: absolute; top: 81px;left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 1.1rem; font-weight: 700;
+                            color: #fff;text-align: center;
+                            }
+
+/* con_box2 */
+#content .con_box2{margin-bottom: 50px;}
+#content .tabs{width:100%;margin:50px 0 10px;}
+#content .tabs ul {width:80%;margin:0 auto;overflow: hidden;
+                  border-bottom: 2px solid #ccc;}
+#content .tabs ul li{width:50%;float: left;text-align: center;
+                    font-weight: 700;
+                    box-sizing: border-box;overflow: hidden;}
+#content .tabs ul li a{font-size:1.2rem;padding:5% 0;}
+#content .tabs ul li:hover a, #content .tabs ul li .current {color: #ED7D31;border-bottom: 2px solid #ED7D31;}
+
+#content .container_box {margin-bottom:50px;display: none;}
+#content .con_box2 .container_box ul li{padding: 5px 30px;text-align: justify;
+                                        line-height: 1.7rem;font-weight:500;}

@@ -1,0 +1,45 @@
+/* mobile   환경경영css  */
+#content{width:100%;margin:0 auto;}
+#content .content_area {width:96%;margin:0 2%;}
+#content h3{font-size: 2rem;font-weight: 700;margin-bottom: 10px;}
+#content p{line-height: 1.7em;margin-bottom:20px;}
+
+
+
+/* js 효과 css */
+#content .top_area {width:100%;margin-bottom:50px; position: relative;}
+#content .top_area p{font-size:2rem;font-weight:500;line-height: 1.7em;
+                           margin-bottom:50px;}
+#content .top_area p span{color: #ccc;display: block;}   
+#content .top_area .round{display: block; position: absolute;
+                                        width:150px; height:150px; background: #ED7D31; opacity: .1;
+                                        left: 30px;top:0; z-index: -1; border-radius: 50%;
+                                        transform: scale(.2); transition: all 1s ease-out; }   
+
+
+
+/* 인재상 */
+#content .con1 {margin-bottom:50px;}
+#content .con1 ul{overflow: hidden;padding: 10px;margin-top:20px;}
+#content .con1 ul li{float: left;width:31.33%; margin: 0 1%;}
+#content .con1 ul li dl{border: 1px solid #ccc; padding: 10px;
+                        border-radius: 20px;height: 200px;
+                        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .3);}
+#content .con1 ul li dl dt>span{font-size: 2rem;}
+ #content .con1 ul li dt{font-weight:600; font-size: 1.2rem;margin: 10px 0;text-align: center;}
+ #content .con1 ul li dd{text-align: justify;}
+
+
+
+/*con2 채용절차  */
+#content .con2{margin-bottom: 50px;}
+#content .con2 .tabs {width: 100%;} 
+#content .con2 .tabs .tab_menu{overflow: hidden;margin: 10px;}
+#content .con2 .tabs .tab_menu li{float: left; margin-right: 10px;}
+#content .con2 .tabs a{display:block; width:50px;height:40px; text-align: center;
+            font-size:1.5rem;font-weight:700;border-radius: 15px;
+            background:#ED7D31; color: #fff;    padding-top: 10px;} 
+
+#content .con2 .tabs .contlist {display: none;padding:15px; background:#f8f8f8} 
+#content .con2 .tabs .contlist span{font-size: 1.4rem;font-weight: 600;color:#ED7D31;}
+#content .con2 .tabs .contlist>p{font-size:1.1rem;margin: 10px 0;}

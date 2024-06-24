@@ -1,0 +1,54 @@
+/* mobile   사업비전 css  */
+#content .content_area{width:96%;margin:0 2%;}
+#content .content_area h3{font-size:1.7rem;font-weight: 700;margin-bottom:20px;}
+
+
+/* con1 영역 */
+#content .con1{margin:0 auto;position: relative;margin-bottom: 50px;}
+#content .con1 .img_box{margin:20px auto;position: relative;width:100%;}
+#content .con1 img{width:90%;margin:0 5%;}
+#content .con1 .article{position: relative;}
+#content .con1 .article .q{position: absolute;
+                            top: -30px;left: 0;
+                            background: #E48F45;
+                            width: 45%;padding: 1%;
+                            border-radius: 0 50px 50px 0;
+                            margin-bottom: 10px;}
+#content .con1 .article a{text-align: center; padding: 3px 0;color:#fff;
+                          font-weight:600;font-size: 1.2rem;}
+#content .con1 .article .a{width:85%;font-size: 1.1rem; line-height: 1.7rem;display: none;
+                          background: #f8f8f8;margin: 0 auto; padding:30px 10px;}
+                            
+
+ /* con2 */
+ #content .con2{margin-bottom: 50px;}
+ #content .con2>div{width:95%;margin:0 auto;}
+ #content .con2>div p{width: 95%;
+                    background: rgb(248, 248, 248);
+                    height: 50px;
+                    margin-left: 2%;
+                    padding: 10px 3px 0 0;
+                    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px 1px;
+                    transform: skew(-10deg);
+                    margin-bottom: 15px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: 600;}
+ /* #content .con2>div p:nth-of-type(2){position: relative;padding:30px 0 ;
+                                    font-size: 1.1rem;font-weight: 600;
+                                    margin-left: 0;margin-right: 20%;}
+ #content .con2>div p:nth-of-type(1)::after{content: '1';
+                                            position: absolute;top:0;left:-20%;
+                                            font-size: 4rem; font-weight: 700;
+                                            color: #E8E8E8; text-shadow: 1px 1px 4px rgba(0, 0, 0, .8);
+                                            z-index: -10;}
+#content .con2>div p:nth-of-type(2)::after{content: '2';
+                                           position: absolute;top:0;right: -20%;
+                                           font-size: 4rem; font-weight: 700;
+                                           color: #E8E8E8; text-shadow: 1px 1px 4px rgba(0, 0, 0, .8);
+                                           z-index: -10;}
+#content .con2>div p:nth-of-type(3)::after{content: '3';
+                                          position: absolute;top:0;left:-20%;
+                                          font-size: 4rem; font-weight: 700;
+                                          color: #E8E8E8; text-shadow: 1px 1px 4px rgba(0, 0, 0, .8);
+                                          z-index: -10;} */

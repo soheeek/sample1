@@ -1,0 +1,48 @@
+
+/* 자주묻는질문 본문 내용 */
+@charset "utf-8";
+/* content area 영역 */
+#content .content_area {width:96%;margin:0 2%;}
+#content .content_area .hgroup{ width:90%; height:350px; position: relative;
+                                left:50%; top:0; filter: grayscale(100%);
+                                margin-bottom: 85px;
+                                transform: translateX(-50%);}
+
+
+/* CSS Document */                       
+#content .content_area .faq{width:100%;margin: 0 auto; position:relative;padding-bottom:50px;}  
+#content .content_area .faq .all{position:absolute; top:-30px; right:0; color:#333; 
+                                 text-decoration:none;font-weight: 600;} 
+#content .content_area .faq ul{width:100%;margin-bottom: 50px;}  
+#content .content_area .faq .q{margin:0;border-top:1px solid #ccc; position: relative;}  
+#content .content_area .faq .q::before{content: '';width:25px; height:25px;
+                                      position: absolute;top:15px;left:10px;
+                                      background: url(../images/Vector.svg);
+                                      }
+#content .content_area .faq .q a.trigger{display:block;padding: 15px 50px 5px;height:40px;
+                                        font-size:1.1rem;font-weight:700; }
+#content .content_area .faq .q a.trigger:hover,  
+#content .content_area .faq .q a.trigger:active,  
+#content .content_area .faq .q a.trigger:focus{background:#feeddd;color:#000;height:40px;} 
+#content .content_area .faq .q span {display: block; position: absolute; right: 15px; top:10px} 
+#content .content_area .faq .a{margin:0;padding: 10px 50px;line-height:1.5;background: #f8f8f8;
+                             padding:10px 5px; display: none;position: relative;} 
+
+                                                            
+/* 1:1질문 CSS */
+#content .content_area .faq .que{position: absolute; bottom:10px;left:40%;
+                                  padding: 10px 10px;font-weight: 600;
+                                  background: linear-gradient(#fff,#eea16d);
+                                  border: 1px solid #f8f8f8;border-radius:15px;
+                                  background-clip: padding-box;
+                                  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5), 1px 3px 3px 2px #fff, 0 0 0 6px #ECECEC;
+                                  border-radius: 16px;
+                                  }
+#content .content_area .faq .que::after{content: "";
+                                        position: absolute;
+                                        top: -4px;bottom:-4px;left:-4px;right:-4px;
+                                        z-index: -1;
+                                        border-radius:15px;
+                                        }
+#content .content_area .faq .que:active { border-top: 1px solid transparent;}
+                                                            

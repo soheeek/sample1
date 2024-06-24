@@ -1,0 +1,41 @@
+/* 고객센터의 공통 */
+
+
+/* visual영역 */
+.visual{width:100%;box-sizing: border-box;position: relative;}
+.visual img{ width: 100%;height:auto;filter: brightness(90%);}
+.visual p{font-size: 1.4rem;
+            font-weight: 700;display: block;
+            color: #fff;
+            position: absolute;
+            top: 45%; right:3%;} 
+.visual span{font-size: 1.2rem;display: block;padding-bottom: 2px;
+             color: #fff;position: absolute; top: 65%;right:3%;}
+.visual span::after{content: '';
+                  width: 120%; height: 1px;
+                  background: #Fff;
+                  position: absolute;
+                  top: 100%;right:-35px;
+                  }
+
+
+
+
+/* 서브메뉴 영역 */
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul {overflow: hidden;width:100%;margin:0 auto;}
+.sub_nav ul li{width:30%;float: left;text-align: center;}
+.sub_nav ul li a{padding:15px 0;color:#999;}
+.sub_nav ul li .current{border-bottom:3px solid  #ED7D31; font-weight:800;font-weight: 700;color:#333;}
+/*sub마다 class current위치만 html에서 바꿔주면됨 */
+
+
+/* title Area 영역 */
+#content{width:100%; margin:0 auto;}
+#content .title_area{position: relative;overflow: hidden;margin-bottom: 50px;} 
+#content .title_area .line_map{position: relative;margin: 10px 0 0 180px;float: right;}
+#content .title_area .line_map .material-symbols-outlined {position: absolute;left: -20px;top: 2px;font-size: 1rem;}
+#content .title_area h2{font-size:2.3rem;text-align: center;position:relative;margin-top:100px;font-weight:700;}
+#content .title_area p{font-size:1.1em; text-align: center;}
+
+

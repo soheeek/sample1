@@ -1,0 +1,32 @@
+/* mobile   사업비전 css  */
+#content .main_con{margin:0 auto;position: relative;color: #fff;}
+#content .main_con h3{font-size:1.7rem;font-weight: 700;margin-bottom: 10px;}
+#content .main_con div{width: 80%;
+                    position: absolute;left: 50%;top:20%;
+                    transform: translate(-50%, -50%);
+                    z-index: 10;}
+#content .main_con div>p{font-size:1.3rem;}
+#content .main_con img{width:100%; height:800px;margin:0 auto 50px;filter:brightness(65%);}
+
+#content .main_con ul{width: 80%;
+                    position: absolute;
+                    left: 50%;top: 500px;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.1rem;
+                    line-height: 1.7rem;}
+#content .main_con ul li{position: relative;padding:8%;}
+#content .main_con ul li>p{width: 80%;line-height: 2rem;font-size: 1.1rem;}
+#content .main_con ul li span{font-size: 3rem;
+                             position: absolute; right: 0;top:40%;}
+
+#content .main_con ul li::before{content: '';
+    position: absolute;left: 50%;top:0;
+    transform: translate(-50%, -50%);
+    width: 110%; height: 1px;
+    background: #fff;}
+#content .main_con ul li:nth-of-type(3)::after{content: '';
+                                position: absolute;left: 50%;bottom:-10px;
+                                transform: translate(-50%, -50%);
+                                width: 110%; height: 1px;
+                                background: #fff;}
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개 - 오시는길</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_4content.css">
+
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/3719511300.js" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6812f2dd80a7e90b5aead304db1eae0a"></script>
+    <script src="./js/map1_4.js"></script>
+
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+        }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    
+    <div id="wrap">
+        <header id="headerArea"> 
+            <div class="header_top"> 
+                <h1><a href="../index.html">로고</a></h1>
+                
+                <a href="#" class="menu_ham">
+                    <span>메뉴열기</span>
+                </a>
+            </div> 
+        <div class="modal"></div>     
+        <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션영역</h2>
+            <a class="logo" href="../index.html">로고</a>
+            <div class="top_menu">
+              <ul>
+                  <li><a href="./login/login.html">로그인</a></li>
+                  <li><a href="./member/member_check.html">회원가입</a></li>
+              </ul>
+            </div>
+       
+            <ul class="mainMenu">  
+                <li class="depth1">
+                    <h3><a href="./sub1_1.html">회사소개</a></h3>
+                    <ul>
+                        <li><a href="./sub1_1.html">사업개요</a></li>
+                        <li><a href="./sub1_2.html">사업비전</a></li>
+                        <li><a href="./sub1_3.html">사업영역</a></li>
+                        <li><a href="./sub1_4.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <h3><a href="../sub2/sub2_1.html">지속가능경영</a></h3>
+                    <ul>
+                        <li><a href="../sub2/sub2_1.html">환경경영</a></li>
+                        <li><a href="../sub2/sub2_2.html">윤리경영</a></li>
+                        <li><a href="../sub2/sub2_3.html">상생경영</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <h3><a href="../sub3/sub3_1.html">인재채용</a></h3>
+                    <ul>
+                        <li><a href="../sub3/sub3_1.html">채용안내</a></li>
+                        <li><a href="../sub3/sub3_2.html">인사제도</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <h3><a href="../sub4/sub4_1.html">고객센터</a></h3>
+                    <ul>
+                        <li><a href="../sub4/sub4_1.html">자주 묻는 질문</a></li>
+                        <li><a href="../sub4/sub4_2.html">고객의 소리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+      </header>  
+
+      <!-- 비주얼영역 -->
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <p>회사소개</p>
+            <span>다음 세대를 가꾸는 기업, 한화</span>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">사업개요</a></li>
+                <li><a href="./sub1_2.html">사업비전</a></li>
+                <li><a href="./sub1_3.html">사업영역</a></li>
+                <li><a href="./sub1_4.html" class="current">오시는 길</a></li>
+            </ul>
+        </div>
+
+
+        <article id="content">
+            <div class="title_area" data-aos="fade-up">
+                <div class="line_map">
+                    <span class="material-symbols-outlined">home</span>
+                    &gt; 회사소개 &gt; <strong>오시는 길</strong>
+                </div>
+
+                <h2>오시는 길</h2>
+                <p>한화호텔&리조트 본사의 <span style="color:orange; font-weight: 500;">찾아오시는 길</span>을 안내 해 드립니다.</p>
+            </div>
+           <!-- 여기까지 공통영역 -->
+
+          <!-- 아래부터 컨텐츠 -->
+          <div class="content_area" data-aos="fade-up">
+    
+                   
+            <div class="map_api">
+                <div id="map">
+                    <!-- 여기에 카카오지도 삽입 -->
+                </div>
+        
+            </div>
+
+
+
+            <div class="map_con">
+                  
+                <ul  class="con1">
+                     <li><span>주소</span>서울특별시 영등포구 63로 50(여의도동)</li>
+                      <li><span>대표전화</span> 1588-2299</li>
+                                
+                        <li>
+                            <p>오시는 길</p>
+                             <dl>
+                                 <dt>
+                                    <span class="material-symbols-outlined">train </span> 대중교통
+                                </dt>
+                                
+                                <dd> <span>지하철 1호선</span> 대방역 하차 - 6번출구 여의도 방향 40M지점 무료셔틀버스 이용</dd>
+                                
+                                <dd><span class="last">버스</span> 간선버스261번, 지선버스 5633번, 지선버스 7611번  여의도역 하차</dd>
+                              
+                            </dl>
+                            
+                            <dl>
+                                 <dt>
+                                    <span class="material-symbols-outlined"> minor_crash </span>
+                                      자가용
+                                 </dt>
+                                 <dd>경부고속도로 한남대교방면 ->올림픽대로(종합운동장,김포공항방면)->
+                                                여의상류IC 에서 여의도(63빌딩0)방면으로 오른쪽방향
+                                 </dd>
+                            </dl>
+                       </li>
+                 </ul>
+                    
+            </div>
+        </div>
+
+    </article>
+
+      <!-- footer영역입니다. -->
+      <footer id="footerArea">
+        <div class="footer_container">
+            <div id="top_move" >
+                <a class="top_container"  href="#"> 
+                    <span class="material-symbols-outlined"> navigation </span>
+                </a>
+            </div>
+            
+            <img class="bottom_logo"  src="../images/logox2.jpg" alt="한화호텔&리조트 하단로고">
+            <!-- 사진경로 안바꿔도됨, 부모페이지가 경로의 기준!!  -->
+           
+                 <ul class="info" >
+                     <li><a href="#">이용약관</a></li>
+                     <li><a href="#">개인정보처리방침</a></li>
+                     <li><a href="#">이메일주소 무단수집거부</a></li>
+                 </ul>
+                  
+                  <ul class="sns">
+                     <li><a href="#"><span>인스타그램</span><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="#"><span>페이스북</span><i class="fa-brands fa-square-facebook"></i></a></li>
+                     <li><a href="#"><span>유튜브</span><i class="fa-brands fa-youtube"></i></a></li>  
+                 </ul>
+           
+    
+            <div class="bottom_content">
+                    <address>
+                        대표자:김승연
+                        <br>
+                        주소: 서울특별시 영등포구 63로 50(여의도동) 
+                        <br>
+                        <a href="tel: 1234-1234 ">전화번호 : 1234-1234</a>
+                        
+                    </address>
+                    
+                    <p class="copy">
+                        copyright &copy;2013 HANWHA Hotels & Resorts ALL RIGHTS 
+                    </p>
+             </div>
+    
+                <div class="select">
+                        <a class="arrow" href="#">FAMILY SITE + </a>
+                        <ul class="aList">
+                            <li><a href="#" target="_blank" title="??사이트 새창에 열림">한화그룹</a></li>
+                            <li><a href="#">한화리조트</a></li>
+                            <li><a href="#">THE PLAZA</a></li>
+                            <li><a href="#">플라자CC</a></li>
+                            <li><a href="#">아쿠아플라넷</a></li>
+                        </ul>
+                </div>
+            
+        </div>
+     </footer>
+ </div>
+            <script src="../js/jquery-1.12.4.min.js"></script>
+            <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+            <script src="../js/swiper.min.js"></script>
+            <script src="../js/gnb.js"></script>
+            <script src="../js/main.js"></script>
+        </body>
+</html>
+
+
+

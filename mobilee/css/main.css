@@ -1,0 +1,134 @@
+/* 메인 visual,contents */
+#content h3{font-size:1.4rem;text-align: center;
+           font-weight:700;}
+/*visual 영역*/
+.visual{width:100%;box-sizing: border-box;}
+
+.visual .swiper-container1 {
+               width: 100%;
+               height:auto;
+               /*높이 유동*/
+               }
+
+.visual .swiper-slide {
+       height:auto;
+       text-align: center;
+       color:#fff;
+       box-sizing: border-box;
+       }
+.visual .swiper-slide img{width: 100%;}
+.visual .swiper-slide p{position: absolute;left:20px;top:75%;
+                        font-weight:700;font-size:1.1em;
+                        text-align: left; }
+.visual .swiper-pagination-bullet-active{background:#ED7D31;}
+.visual .swiper-button-next,
+.visual .swiper-button-prev{color:#fff;font-weight: 900;}
+
+
+/* vision 영역 */
+#content .vision {background: #f8f8f8;padding:50px 0 70px 0;}
+#content .vision .vision_con p{text-align: center;margin-bottom:20px;}
+#content .vision .vision_con .swiper-container1{position: relative;height: auto;}
+#content .vision .vision_con .swiper-container1 .swiper-wrapper {}
+#content .vision .vision_con .swiper-container1 .swiper-wrapper .swiper-slide{
+                                             position: relative; }
+#content .vision .vision_con .swiper-slide dl{position: absolute;
+                                              left:0;bottom:0px;
+                                              width:100%;height: 50px;
+                                              background: rgba(0, 0, 0, .6);
+                                              text-align: center;color:#fff;}
+#content .vision .vision_con .swiper-slide dt{font-weight: 600;}
+
+#content .vision .vision_con .swiper-slide a img{width:100%;}
+#content .vision .swiper-container-horizontal>.swiper-scrollbar 
+                                        {opacity: 1;
+                                          position: absolute;
+                                          left: 50%;bottom: -40px;
+                                          z-index: 50;
+                                          height: 2px;width: 80%;
+                                          transform: translate(-50%, -50%);}
+                                          
+
+/*사업분야 영역*/
+#content .buissness{margin-bottom: 50px;position:relative;}
+#content .buissness h3{ margin:50px 0 30px 0;}
+#content .buissness ul {width:100%;display: flex;flex-wrap: wrap;}
+#content .buissness li{width:50%;position: relative;}
+#content .buissness li img{width:100%;filter:brightness(.8) }
+
+#content .buissness>a{position: absolute;right: 3%;top:18px;
+                      transform: translate(-50%, -50%);}
+#content .buissness>a span{font-size:2.2rem;color:#ED7D31;}
+#content .buissness li>p{position: absolute;left: 50%; top: 50%;
+                         transform: translate(-50%, -50%);
+                         font-size:1.1em;font-weight:700;
+                         color:#fff;
+                         }
+
+
+/*지속가능경영*/
+#content .esg{background: #f8f8f8;position: relative;
+             padding:30px 0 30px 0;}
+#content .esg h3{margin:30px 0 30px 0;}      
+
+#content .esg .swiper-container{ width: 100%;position: relative;}
+#content .esg .swiper-wrapper{position: relative;
+                             width: 100%;height: 100%;
+                             z-index: 1;
+                             display: flex;
+                             box-sizing: content-box;
+                             padding: 20px 0 50px}
+#content .esg .swiper-wrapper .swiper-slide{
+                     background-position: center;
+                     width:320px;height:400px;text-align: center;
+                     border: 3px solid #ED7D31;
+                     box-sizing: border-box;border-radius:15px;
+                     box-shadow: 0 0 15px 1px rgba(0, 0, 0, .2);
+                     }
+
+#content .esg .swiper-wrapper .swiper-slide img{
+                       width:100%;height:200px;margin-top:100px;
+                       object-fit: cover;object-position: center;
+                        }
+#content .esg .swiper-wrapper .swiper-slide dl{position: relative;}
+#content .esg .swiper-wrapper .swiper-slide dl dt{
+                        position: absolute;left: 50%; top:-250px;
+                        transform: translate(-50%, -50%);
+                        font-size: 1.3rem;font-weight:700;
+                        }
+#content .esg .swiper-wrapper .swiper-slide dl dd{
+                       position: absolute;left: 50%;bottom:-50px;
+                       transform: translate(-50%, -50%);
+                       font-weight:600;}
+
+
+
+#content .esg .swiper-pagination-bullet-active{background: #ED7D31;box-shadow: 1px 1px 4px 1px rgba(0,0,0,.5);}
+#content .esg .swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+                          left: 0; width: 100%; bottom:0;}
+#content .esg .swiper-wrapper .swiper-slide>a{background: url(../images/viewmore.png) no-repeat;
+                                              width:52px; height:26px;text-indent: -9999px; 
+                                              position: absolute;left: 50%;bottom:0;
+                                              transform: translate(-50%, -50%);
+                                             }
+
+
+/* 인재채용 */
+#content .hr{overflow: hidden;position: relative; height: 270px;}
+#content .hr .contop{position: absolute;
+                left: 0;top:0;
+                width: 100%;color:#fff;}
+#content .hr>div h3{margin:50px 0 10px 0 ;}
+#content .hr>div p{text-align: center;}
+#content .hr img{width: 100%;height: 270px;
+       object-fit: cover;object-position: center;}
+#content .hr a>.view_more{width:100%;position: relative;}
+#content .hr a{display: block;width:30%;text-align: center;
+              background: #d9d9d9;padding: 10px;border-radius: 10px;
+              position: absolute;left: 50%; top:75%;
+              transform: translate(-50%, -50%);
+               }
+#content .hr a span{padding:3px 5px;font-weight: 700;
+                    font-size:1.1em;}
+#content .hr a i{color:#333;}

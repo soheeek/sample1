@@ -1,0 +1,62 @@
+/* mobile 고객의 소리css  */
+#content .content_area {width:96%;margin:0 2%;}
+#content .content_area h3{font-size:1.7rem;font-weight: 700;margin-bottom: 10px;}
+      
+
+ /* con2 */
+ #content .con1{margin-bottom: 50px;}
+ #content .con1 p{font-size: 1.1rem;font-weight: 600; text-align: justify;
+                line-height: 1.5rem; margin-bottom: 20px;}
+ #content .con1 span{margin-bottom: 5px;display: block;line-height: 1.7rem;}
+ 
+#content .content_area .info{width:100%;}
+#content .content_area .info dl{float:left;width:24%;height:100px;
+                                margin-top: 20px;margin-left:.5%;
+                               background:#f8f8f8; position:relative;
+                               box-shadow: 1px 1px 4px 1px rgba(0,0,0,.4);}
+#content .content_area .info dl dt{text-align: center; font-weight: 600;
+                                    position: absolute; bottom: 0;  left: 0;
+                                    width: 98%; margin:2px 1%;}
+#content .content_area .info dl dd{text-align: center;width: 100%;
+                                   position: absolute;top:10px; left:0;}
+#content .content_area .info dl dd i{font-size:3rem;color:#ED7D31}
+
+/* 팝업 css */
+#content .content_area .pop_gallery .box{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+}/*팝업 띄었을때 배경*/
+
+#content .content_area .pop_gallery .big{ 
+    width:90%;
+    height:300px;
+    border: 3px solid #555;
+    background: #fff;
+    position: absolute;
+    padding: 10px;
+    left: 50%;top:50%;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+    display: none;
+    z-index: 20;
+}
+
+#content .content_area .pop_gallery p{
+    text-align: center;
+    padding: 10px; }
+#content .content_area .pop_gallery .openBtn{width: 30%;
+    margin: 15px 35%;
+    text-align: center;
+    font-size: 1.1rem;font-weight: 700;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #ed7d31;}
+#content .content_area .pop_gallery .big .closeBtn{
+    display: block;margin: 200px auto;font-size:700;
+    text-align: center;}
