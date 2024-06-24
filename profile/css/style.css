@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+/* font-family: "Noto Sans KR", sans-serif; */
+
+/* reset css */
+*{
+	margin: 0; padding: 0; border: 0;
+}
+html, body{font-size: 18px;}
+a{display: block; text-decoration: none;}
+ul, ol{list-style: none}
+img{vertical-align: top;}
+
+
+/* common class */
+.hidden{
+	display: block; width: 1px; height: 1px; position: absolute; top: 0;
+	left: -1000%; overflow: hidden;
+} 
+
+/* custom css */
+body{color: #333; font-family: "Noto Sans KR", sans-serif ;}
+nav h3{font-family: "Poetsen One", sans-serif;font-size: 1.1rem;}
+#menu{position: fixed;top:37%;left: 25px;z-index: 100;}
+#menu li{margin: 3% 0 13% 20px;border-radius:10px;}
+/* #menu li.active{background: rgba(0,0,0, 0.5);} */
+#menu li.active a{color: #ff5e5e;}
+#menu li a{color: #f5f5f5; 
+	/* padding: 9px 18px; */
+}
+#fp-nav{z-index: 90;top: 48%;}
+
+#fp-nav.right {left:10px;width:10%;}
+
+#fp-nav ul li, .fp-slidesNav ul li{display: block;
+						width: 14px;height: 14px;
+						margin: 5px 0 28px 0;
+						position: relative;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{height:10px;width:10px; 
+    border: 1px solid #f8f8f8;background: none;}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+width:15px;height:15px;background: #ff5e5e;;}
+						/* content 공통 */
+#fullpage{background:url(../images/info.jpg);width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: right center;
+	overflow: hidden;
+	background-attachment: fixed;}
+#fullpage h3{font-size:30px;font-weight: 700;margin:100px 0 0 200px;position: relative;}
+#fullpage h3::before{content:'';width: 500px;height: 5px;background: #333;position: absolute;left: 0; bottom: -15px;}
+.button-87 { padding: 10px 4px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 10px;
+	display: block;
+	font-weight: 700;
+	box-shadow: 0px 0px 14px -7px #f09819;
+	background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+	cursor: pointer;
+	touch-action: manipulation;
+	width: 150px;height:40px;
+    overflow: hidden; }
+  
+  .button-87:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #333;font-weight: 800;
+	text-decoration: none;
+  }
+  
+  .button-87:active {
+	transform: scale(0.95);
+  }
+
+
+/* intro */
+#fullpage .intro_con{overflow: hidden;}
+#fullpage .intro_con>span{display:block;color:#ff5e5e;font-size: 30px;font-weight:600;text-align: center;padding-top:380px;}
+#fullpage .intro_con p{text-align: center;font-size:120px;font-weight: bold;font-family: "Poetsen One", sans-serif;
+						color: transparent;
+						position: relative;
+						-webkit-text-stroke: 1px #fff;
+						text-shadow: 10px 15px 10px rgba(0, 0, 0, .5);}
+
+#fullpage .intro_con P>span {
+	font-size: 80px;
+	color: #fff;
+	position: relative;
+	top: 20px;
+	display: inline-block;
+	 /*  폰트가 부드러워지게 설정  */
+	-webkit-font-smoothing: antialiased;
+  /*  x축, y축, 블러 설정  */
+	 text-shadow: 0 1px 0 #ccc, 
+				  0 2px 0 #ccc, 
+				  0 3px 0 #ccc,  
+				  0 4px 0 #ccc, 
+				  0 5px 0 #ccc, 
+				  0 6px 0 transparent,
+				  0 7px 0 transparent,
+				  0 8px 0 transparent,
+				  0 9px 0 transparent,
+				  0 10px 10px rgba(0,0,0,0.4);
+	animation: bounce 0.3s ease infinite alternate;
+  }
+  #fullpage .intro_con P>span:nth-child(2){animation-delay: 0.1s;}
+  #fullpage .intro_con P>span:nth-child(3){animation-delay: 0.2s;}
+  #fullpage .intro_con P>span:nth-child(4){animation-delay: 0.3s;}
+  #fullpage .intro_con P>span:nth-child(5){animation-delay: 0.4s;}
+  #fullpage .intro_con P>span:nth-child(6){animation-delay: 0.5s;}
+  #fullpage .intro_con P>span:nth-child(7){animation-delay: 0.6s;}
+  #fullpage .intro_con P>span:nth-child(8){animation-delay: 0.7s;}
+  #fullpage .intro_con P>span:nth-child(9){animation-delay: 0.7s;}
+  
+  
+  @keyframes bounce {
+	100% {
+	  top: -20px;
+	  text-shadow : 0 1px 0 #ccc,
+				 0 1px 0 #ccc,
+				 0 3px 0 #ccc,
+				 0 4px 0 #ccc,
+				 0 5px 0 #ccc,
+				 0 6px 0 transparent,
+				 0 7px 0 transparent,
+				 0 8px 0 transparent,
+				 0 9px 0 transparent,
+				 0 50px 20px rgba(0,0,0,0.4);
+	}
+  }
+#fullpage .intro_con .heart{position:absolute;
+							right:200px;
+							top:50px;
+							animation:ball 2s ease-in Infinite Alternate;}
+#fullpage .intro_con .heart img {width:150px;height: 150px;}
+
+#fullpage .intro_con .star{position:absolute;
+					     right:100px;top:0x;animation:ball 1s ease-in Infinite Alternate;
+						
+					& img{
+							width:100px;height: 100px;
+						}
+			    	}
+#fullpage .intro_con .star_big{position:absolute;
+						right:200px;top:50px;animation:ball 2s ease-in Infinite Alternate;
+					   
+				   & img{
+						   width:300px;height: 300px;
+					   }
+				   }
+
+
+@keyframes ball {
+	0% {
+	  top:200px;
+	}
+	to {
+	  top:230px;
+	} 
+  }
+
+/* profile */
+#fullpage .profile_con {overflow: hidden;position: relative;}
+#fullpage .profile_con .profile_con1 {float: left;  margin:190px 100px 0 350px;}
+#fullpage .profile_con1 li:nth-child(1){background: #ccc;width: 480px;height: 520px;border-radius:50%;margin-bottom: 30px;}
+#fullpage .profile_con1 li:nth-child(2){overflow: hidden;float: left;border: 1px solid #fff;width:140px;height:50px;border-radius:15px;margin: 0 5px 0 20px;}
+#fullpage .profile_con1 li:nth-child(3){overflow: hidden;float: left;border: 1px solid #fff;width:140px;height:50px;border-radius:15px;margin-right: 5px;}
+#fullpage .profile_con1 li:nth-child(4){overflow: hidden;float: left;border: 1px solid #fff;width:140px;height:50px;border-radius:15px;}
+#fullpage .profile_con1 li a{text-align: center;font-family: "Poetsen One";padding: 15px 0;font-size: 18px;color:#333;}
+#fullpage .profile_con1 li:hover a{color:#ff5e5e;background: rgba(255,255,255, .5);}
+#fullpage .profile_con .profile_con2{height: 100%;width:600px;padding: 250px 0 20px 100px;float: left; }
+#fullpage .profile_con2 li{margin-bottom: 30px; font-weight: 500;}
+#fullpage .profile_con2 li:nth-child(1) span{font-size:80px;}
+#fullpage .profile_con2 li:nth-child(1) span::after{content:'김소희';font-size:20px;padding:20px;font-weight: 700;}
+#fullpage .profile_con2 li span{font-family: "Poetsen One";font-size:35px;display: block;margin-bottom: 15px;}
+#fullpage .profile_con2 li div{margin-bottom: 10px;}
+#fullpage .profile_con2 li .skill_imgs>img{margin:10px 10px 0 0;opacity: .8;}
+#fullpage .profile_con2 li .skill_imgs>img:hover{opacity: 1;}
+
+
+/* web */
+#fullpage .web_con{overflow: hidden;position: relative;}
+#fullpage .web_con h3::after{content:'Corporate Type PC';font-size:13px;font-weight:500;}
+#fullpage .web_con .contain{float: left;margin:50px 8% 0 12%;}
+#fullpage .web_con>div:nth-child(3){margin: 100px 50px 0 0;overflow: hidden;}
+#fullpage .web_con>div:nth-child(3)>div{margin-bottom:50px;}
+#fullpage .web_con>div:nth-child(3)>p{margin-bottom: 50px;}
+#fullpage .web_con>div:nth-child(3) span{display: block;font-size:22px; font-weight: 700;}
+ .img_box{
+	     float: left; margin-right: 3%;
+		position: relative;}
+ .img_box .pc{position:relative;left: 0; top:0; z-index: 10;
+		  width: 100%;}
+ .img_box .gif{position:absolute;left: 3%; top:4.5%;
+   width: 94%;}
+ .text_box{width: 50%; float: right;}
+
+/* mobile */
+#fullpage .mobile_con{overflow: hidden;}
+#fullpage .mobile_con h3::after{content:'Corporate Type MOBILE';font-size:13px;font-weight:500;}
+#fullpage .mobile_con .contain{margin:50px 14% 0;float: left;}
+#fullpage .mobile_con>div:nth-child(3){margin: 100px 50px 0 0;overflow: hidden;}
+#fullpage .mobile_con>div:nth-child(3)>div{margin-bottom:30px;}
+#fullpage .mobile_con>div:nth-child(3)>p{margin-bottom: 50px;}
+#fullpage .mobile_con>div:nth-child(3) span{display: block;font-size:22px; font-weight: 700;}
+/* #fullpage .mobile_con>div:nth-child(3) .color01{float:left;width:70px;height: 30px;background: #ED7D31;}
+#fullpage .mobile_con>div:nth-child(3) .color02{float:left;width:70px;height: 30px;background:#6C5F5B}
+#fullpage .mobile_con>div:nth-child(3) .color03{float:left;width:70px;height: 30px;background: #EFECEC;} */
+.color01{float:left;width:70px;height: 30px;background: #ED7D31;}
+.color02{float:left;width:70px;height: 30px;background:#6C5F5B}
+.color03{float:left;width:70px;height: 30px;background: #EFECEC;} 
+#fullpage .mobile_con div .qr{position: absolute;top:5%;right:5%}
+#fullpage .mobile_con div .qr img{width:110px}
+
+
+/* Responsive*/
+#fullpage .res_con{overflow: hidden;background: #000;color:#fff;position: relative;}
+#fullpage .res_con h3::after{content:'Corporate Type RESPONSIVE';font-size:13px;font-weight:500;}
+#fullpage .res_con .contain{ margin: 50px 5% 0 11%;float: left;position: relative;}
+#fullpage .res_con .contain .pad{position: absolute;bottom:0; left: 50px; z-index: 50; width: 250px;}
+#fullpage .res_con .contain .phone{position: absolute;bottom:0; left:0; z-index: 50; width:150px;}
+#fullpage .res_con>div:nth-child(3){margin: 100px 50px 0 0;overflow: hidden;}
+#fullpage .res_con>div:nth-child(3)>div{margin-bottom:30px;}
+#fullpage .res_con>div:nth-child(3)>p{margin-bottom: 50px;}
+#fullpage .res_con>div:nth-child(3) span{display: block;font-size:22px; font-weight: 700;}
+#fullpage .res_con>div:nth-child(3) .maple01{float:left;margin-right: 15px;}
+#fullpage .res_con>div:nth-child(3) .maple02{float:left;margin-right: 15px;}
+#fullpage .res_con div .qr{position: absolute;top:5%;right:5%}
