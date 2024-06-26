@@ -17,13 +17,19 @@
                                 font-weight: 400; margin: 160px 0 0 400px;}
 #content .content_area .con1 p span{color:#ED7D31; font-weight:500; font-size: 3rem;
                 text-shadow: 1px 1px 10px rgba(0,0,0,.4);}
+
+
 #content .content_area .con2{margin-bottom:200px;}
 #content .content_area .con2 h3 {text-align: center;font-size: 2.22em;}
 #content .content_area .con2 p{text-align:justify; margin: 50px  50px 200px  50px;line-height: 1.7rem;}
 #content .content_area .con2 .container{position: relative;}
+#content .content_area .con2 .container>a .text{text-indent: -9999px;}
+#content .content_area .con2 .container>a .material-symbols-outlined{position: absolute;
+                                          bottom: 145px; right: 200px;font-size: 1.5em;transition: all .8s ease-out;}
+#content .content_area .con2 .container>a:hover .material-symbols-outlined{transform: scale(1.2) rotate(360deg);color:#ED7D31}
 #content .content_area .con2 .container img{margin-left:100px;box-shadow: 2px 2px 10px 1px rgba(0,0,0,.4);}
 #content .content_area .con2 .container dl{background: #FFCDB1; color:#333; 
-                                    margin-left: 800px; 
+                                    margin-left: 800px; border-radius: 10px;
                                     position: absolute; right: 130px;top: 300px;
                                     width:430px;height:250px; }
 #content .content_area .con2 .container dl dt{text-align: center;margin:25px 0;font-weight:700;font-size: 1.2rem;}

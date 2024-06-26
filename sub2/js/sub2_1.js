@@ -3,19 +3,30 @@
 var memo = [
    {title:'거제벌베디어',
     sub:'유니크한 공간 및 프라이빗서비스를 갖춘 프리미엄 리조트입니다바다가 한눈에 보여시원하고 상쾌한 느낌을 주는 객실 인테리어와차분한 분위기의 침실을 갖추어 편안하고 여유로운 시간을 보내실 수 있습니다.',
-    imgsrc:'img1.jpg'},
+    imgsrc:'img1.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_room.do?bp_cd=2101'
+    },
     {title:'설악 쏘라노',
     sub:'동해와 설악이 맞닿은 자연의 아름다운 풍경이 있는 한화리조트/설악 쏘라노입니다.시간과 공간을 초월하는 유럽의 절대적 미(BEAUTY, 美) 유럽에 대한 향수와 생명력 넘치는 자연을 모티브로 만들어내는 꿈의 신세계!',
-    imgsrc:'img2.jpg'},
+    imgsrc:'img2.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_room.do?bp_cd=0101'
+    },
     {title:'한화리조트 평창',
     sub:'2018 동계올림픽 개최지에서 즐기는 레저, 휴양 그리고 최상의 컨벤션 시설! 고급스럽고 아늑한 휴식의 공간, 한화리조트/평창으로 초대합니다.',
-    imgsrc:'img3.jpg'},
+    imgsrc:'img3.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_room.do?bp_cd=1601'},
     {title:'한화리조트 제주',
     sub:'한라산의 수려한 자연경관을 품은 상쾌한 힐링리조트 , 제주의 낭만과 여유로움이 머무는 한화리조트 제주로 여러분들을 초대합니다.',
-    imgsrc:'img4.jpg'},
+    imgsrc:'img4.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_room.do?bp_cd=1101'},
     {title:'설악 해운대',
     sub:'해운대의 아름다운 야경이 눈앞에 펼쳐지는 곳, 해운대와 오륙도, 광안대교가 함께 어우르는 대한민국 새로운 레져문화의 중심지, 한화리조트/해운대입니다.',
-    imgsrc:'img5.jpg'}
+    imgsrc:'img5.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_room.do?bp_cd=0801'},
+    {title:'산정호수 안시',
+    sub:'아름다운 산과 호수가 절경을 이루고 있는 순수 자연공간 속 휴양 리조트,명성산과 관음산의 풍광이 펼쳐진 호수의 절경 속에서 즐기는 사계절 액티비티-하이킹, 래프팅, 얼음썰매까지 한화리조트의 산정호수 안시와 함께 즐기세요.',
+    imgsrc:'img6.jpg',
+    link:'https://www.hanwharesort.co.kr/irsweb/resort3/resort/rs_intro.do?bp_cd=0701'}
 ];
 
 var ind = 0 ;
@@ -25,6 +36,7 @@ var total = memo.length;
       $('.con2 .img_box img').attr('src','./images/content1/'+memo[ind].imgsrc).hide().fadeIn('fast');
       $('.con2 dt').text(memo[ind].title);
       $('.con2 dd').text(memo[ind].sub);
+      $('.con2 a').attr('href', memo[ind].link);
       $('.con2 .text').text((ind+1)+' | '+total);
   
     }
@@ -32,7 +44,7 @@ var total = memo.length;
     $('.con2 .left').click(function(e){
         e.preventDefault();
        ind--;
-       if(ind==-1)ind=4;0
+       if(ind==-1)ind=5;0
        conchange();
     })
 
@@ -40,7 +52,7 @@ var total = memo.length;
         e.preventDefault();
 
         ind++;
-        if(ind==5)ind=0;
+        if(ind==6)ind=0;
         conchange();
 
     });
@@ -94,7 +106,7 @@ $(document).ready(function(){
  });
 
  /*★★ fnb 영역 ★★*/
- 
+ $(document).ready(function() {
  var po = $('#content .content_area .main h3').offset().top;
 
  $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
@@ -110,7 +122,7 @@ $(document).ready(function(){
 
 
 
-$('dl a').click(function(e){
+$('#content .content_area .main dl a').click(function(e){
   e.preventDefault();
 
   var value=0;
@@ -128,5 +140,7 @@ $('dl a').click(function(e){
   value-=80;
 
   $("html,body").stop().animate({"scrollTop":value},1000);
+
+});
 
 });
