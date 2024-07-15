@@ -44,7 +44,8 @@
 #content .content_area .con_bottom .notice_content ul li:hover dl span{color: #fff;}
 #content .content_area .con_bottom .notice_content ul li:hover dl{color: #fff;}
 #content .content_area .con_bottom .notice_content ul li dt{font-weight:600;font-size: 1.25em;text-align: center;}
-#content .content_area .con_bottom .notice_content ul li dd {margin:10px 20px 10px 20px;text-overflow: ellipsis;overflow: hidden;height: 126px;}
+#content .content_area .con_bottom .notice_content ul li dd {margin:10px 20px 10px 20px;text-overflow: ellipsis;overflow: hidden;height: 126px;
+padding-bottom:75px}
 #content .notice_btn{position: absolute;right: 100px;top: 150px;overflow: hidden;}
 #content .notice_btn a{float: left;}
 #content .notice_btn i{font-size:2.6em;color: #ccc; margin-right: 10px;}
@@ -66,7 +67,8 @@
 
 #content .product ul{overflow: hidden;}
 #content .product li{width: 25%; height:300px; float: left; text-align: center;padding-top: 10px;}
-#content .product li img{width:210px;height: 150px;box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);}
+#content .product li img{width:210px;height: 150px;box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);transition:all .3s ease-out;}
+#content .product li img:hover{transform: scale(1.1);}
 #content .product li dl{width: 200px; margin: 15px auto;} 
 #content .product li dt{font-size:18px ; font-weight: bold; margin-bottom: 10px;}
 #content .product li dd{line-height: 1.5em;}

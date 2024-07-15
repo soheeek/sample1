@@ -7,7 +7,7 @@
 
 /*con_top 영역 */
 #content .content_area .con_top {}
-#content .content_area .con_top h3{margin-bottom:50px;}
+#content .content_area .con_top h3{margin-bottom:50px;text-align: center;}
 #content .content_area .con_top img{border-radius:50px;}
 #content .content_area .con_top .container{width: 740px;height: 300px;background: #F8FBFF;
                                             position: relative;
